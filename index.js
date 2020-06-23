@@ -91,7 +91,7 @@ client.on("message", message => {
 
 client.on("guildCreate", guild => {
   const moment = require("moment");
-  let canal = client.channels.get("722548274002919515");
+  let canal = client.channels.get("725102557222928395");
   let icon = guild.iconURL || "https://loritta.website/assets/img/unknown.png";
   let embedentrada = new Discord.RichEmbed()
     .setAuthor(`${client.user.username}`, client.user.avatarURL)
@@ -115,7 +115,7 @@ client.on("guildCreate", guild => {
 
 client.on("guildDelete", guild => {
   const moment = require("moment");
-  let canal = client.channels.get("722548339219890276");
+  let canal = client.channels.get("725102557222928395");
   let icon = guild.iconURL || "https://loritta.website/assets/img/unknown.png";
   let embedsaida = new Discord.RichEmbed()
     .setAuthor(`${client.user.username}`, client.user.avatarURL)
@@ -160,8 +160,8 @@ client.on("guildCreate", async guild => {
 });*/
 
 client.on("ready", () => {
-  let logs = client.channels.get("722549279029198950");
-  if (!logs) return console.log("Canal de log's não definido");
+  let logs = client.channels.get("725102557222928395");
+  if (!logs) return console.log("725102557222928395");
   logs.send(
     `O bot \`${client.user.username}\` foi iniciado, com ${client.users.size} usuários, em ${client.guilds.size} servidores.`
   );
