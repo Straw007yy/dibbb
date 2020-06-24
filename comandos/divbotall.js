@@ -23,7 +23,7 @@ const mensagem = new Discord.RichEmbed()
 .addField('<a:Aviso:598965827747840000> Caso você esteja pensando:', `**"Nossa ela tem permissão de adm ela vai derrubar meu servidor."**\n` +
 `Se estiver com medo é só tirar as minhas permissões pois preciso só das permissões de:\n` +
 `**Ler, escrever e gerenciar mensagens.**`)
-.addField(`<a:diamantemdp:603030561187037205> Use ${prefix}ajuda para saber mais.`, `**[Entre em meu servidor https://discord.gg/ASJJGgh](https://discord.gg/ASJJGgh)**`)
+.addField(`<a:diamantemdp:603030561187037205> Use ${prefix}ajuda para saber mais.`, `**[Entre em meu servidor https://discord.gg/xaEZjXY](https://discord.gg/xaEZjXY)**`)
 .setColor('#ff47ec')
 .setFooter(message.member.username, message.member.avatarURL)
 .setTimestamp();
