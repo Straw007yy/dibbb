@@ -17,7 +17,7 @@ let mensagem = args.join(" ")
   let fumante = client.users.get('631219646275780659')
       
 message.channel.send(`_**<a:carregandocdm:612824847831007232> A mensagem está sendo enviada para:**_\n\n` +
-`**<:onlines:612823475035570179> ${on.size}** onlines\n` +
+`**<a:botonline:725418252913737760> ${on.size}** onlines\n` +
 `**<:ocupados:612823475471515658> ${npertube.size}** ocupados\n` +
 `**<:ausentes:612823475387891733> ${ausente.size}** ausentes\n\n` +
 `**<:discord:612823833979650079> Total de usuários:** ${todos.size}\n\n` +
@@ -31,7 +31,7 @@ ausente.forEach((f3) => {f3.send(mensagem)});
 
   fumante.forEach((f4) => {
         message.channel.send(`_**A mensagem foi enviada para:**_\n\n` +
-`**<:onlines:612823475035570179> ${on.size}** onlines\n` +
+`**<a:botonline:725418252913737760> ${on.size}** onlines\n` +
 `**<:ocupados:612823475471515658> ${npertube.size}** ocupados\n` +
 `**<:ausentes:612823475387891733> ${ausente.size}** ausentes\n\n` +
 `**<:discord:612823833979650079> Total de usuários:** ${todos.size}\n\n` +
