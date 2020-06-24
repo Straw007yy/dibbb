@@ -12,11 +12,11 @@ exports.run = (client, message, args) => {
     let embed = new Discord.RichEmbed()
         .setAuthor(client.user.username, client.user.avatarURL)
         .setTitle(`<a:CarregandoBots:725399340419383318> Clique no emoji parar abrir a categoria...`, `** **`)
-        .setDescription(`<a:sinocdm:614407332155359244> Comandos de **Anúncio**
+        .setDescription(`:bell: Comandos de **Anúncio**
 <a:hypecdm:614407332058890241> Comandos de **Utilidade**
 <a:googlecdm:614407332780310539> Comandos de **Status**
 <a:staffcdm:614759344072032268> Comandos de **Moderação**
-<:18cdm:614653146689437697> Comandos de **Nsfw**
+<:18cdm:725489548083331213> Comandos de **Nsfw**
 <:chatcdm:614407735043424256> **Sobre mim**
 :painel: **Voltar** ao painel
 
@@ -26,11 +26,11 @@ exports.run = (client, message, args) => {
         .setFooter(user + ' • Painel de ajuda', av)
     
     message.channel.send(embed).then((c) => {
-            c.react('614407332155359244').then(() => {
+            c.react(':bell:').then(() => {
             c.react('614407332058890241').then(() => {
             c.react('614407332780310539').then(() => {
             c.react('614759344072032268').then(() => {
-            c.react('614653146689437697').then(() => {
+            c.react('725489548083331213').then(() => {
             c.react('614407735043424256').then(() => {
             c.react(':sparkles:').then(() => {
         })
@@ -46,7 +46,7 @@ exports.run = (client, message, args) => {
         let UtilidadeFilter = (reaction, user, ) => reaction.emoji.id === '614407332058890241' && user.id === message.author.id;
         let StatusFilter = (reaction, user, ) => reaction.emoji.id === '614407332780310539' && user.id === message.author.id;
         let ModeraçãoFilter = (reaction, user, ) => reaction.emoji.id === '614759344072032268' && user.id === message.author.id;
-        let NsfwFilter = (reaction, user, ) => reaction.emoji.id === '614653146689437697' && user.id === message.author.id;
+        let NsfwFilter = (reaction, user, ) => reaction.emoji.id === '725489548083331213' && user.id === message.author.id;
         let SobreFilter = (reaction, user, ) => reaction.emoji.id === '614407735043424256' && user.id === message.author.id;
         let VoltarFilter = (reaction, user, ) => reaction.emoji.id === '725397637809045525' && user.id === message.author.id;
         let Anúncio = c.createReactionCollector(AnúncioFilter, { time: 80000 });
@@ -60,7 +60,7 @@ exports.run = (client, message, args) => {
 
         Anúncio.on('collect', r2 => { 
            let anuncio = new Discord.RichEmbed()
-                .setTitle("<a:sinocdm:614407332155359244>┆Comandos para Anúncio")
+                .setTitle(":bell:┆Comandos para Anúncio")
                 .setDescription(`» \`${config.prefix}aviso\` (msg) - Manda um aviso a todos do seu servidor.\n\n` +
                 `» \`${config.prefix}avisoembed\` | titulo | descrição | link de foto ou gif |\n` +
                 `Manda um aviso em embed a todos do seu servidor.\n` +
@@ -115,7 +115,7 @@ exports.run = (client, message, args) => {
 
         Nsfw.on('collect', r2 => { 
             let nsfw = new Discord.RichEmbed()
-                .setTitle("<:18cdm:614653146689437697>┆Comandos de Nsfw")
+                .setTitle("<:18cdm:725489548083331213>┆Comandos de Nsfw")
                 .setDescription(`» \`${config.prefix}nsfw\` - Manda um gif aleatório de Nsfw.\n\n` +
                                 `» \`${config.prefix}4k\` - Foto em 4k aleatória.\n\n` +
                                 `» \`${config.prefix}pussy\` - Foto/gif de uma buceta.\n\n` +
