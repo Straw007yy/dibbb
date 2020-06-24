@@ -13,11 +13,11 @@ exports.run = (client, message, args) => {
         .setAuthor(client.user.username, client.user.avatarURL)
         .setTitle(`<a:CarregandoBots:725399340419383318> Clique no emoji parar abrir a categoria...`, `** **`)
         .setDescription(`:bell: Comandos de **Anúncio**
-<a:hypecdm:614407332058890241> Comandos de **Utilidade**
-<a:googlecdm:614407332780310539> Comandos de **Status**
-<a:staffcdm:614759344072032268> Comandos de **Moderação**
-<:18cdm:725489548083331213> Comandos de **Nsfw**
-<:chatcdm:614407735043424256> **Sobre mim**
+:hammer: Comandos de **Utilidade**
+:desktop: Comandos de **Status**
+:robot: Comandos de **Moderação**
+:underage: Comandos de **Nsfw**
+:thought_balloon: **Sobre mim**
 :painel: **Voltar** ao painel
 
 :link: **[Clique aqui para me Adicionar](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=2146958847&scope=bot)**`)
@@ -26,7 +26,7 @@ exports.run = (client, message, args) => {
         .setFooter(user + ' • Painel de ajuda', av)
     
     message.channel.send(embed).then((c) => {
-            c.react(':bell:').then(() => {
+            c.react('725494639314075659').then(() => {
             c.react('614407332058890241').then(() => {
             c.react('614407332780310539').then(() => {
             c.react('614759344072032268').then(() => {
@@ -75,7 +75,7 @@ exports.run = (client, message, args) => {
 
         Utilidade.on('collect', r2 => { 
             let util = new Discord.RichEmbed()
-                .setTitle("<a:hypecdm:614407332058890241>┆Comandos de Utilidade")
+                .setTitle(":hammer:┆Comandos de Utilidade")
                 .setDescription(`» \`${config.prefix}responder (id/menção) (msg)\` - Manda uma mensagem no privado de um usuário com o bot.\n\n` +
                 `» \`${config.prefix}say (msg)\` - Manda uma mensagem com o bot.\n\n` +
                 `» \`${config.prefix}cc\` - Cria um convite permanente do servidor.\n\n` +
@@ -91,7 +91,7 @@ exports.run = (client, message, args) => {
         
         Status.on('collect', r2 => { 
             let status = new Discord.RichEmbed()
-                .setTitle("<a:googlecdm:614407332780310539>┆Comandos de Status")
+                .setTitle(":desktop:┆Comandos de Status")
                 .setDescription(`» \`${config.prefix}sugestão (sugestão)\` - Me manda uma sugestão.\n\n` +
                 `» \`${config.prefix}bug (bug)\` - Reporta um bug no bot.\n\n` +
                 `» \`${config.prefix}ping\` - Mostra o ping do bot.\n\n` +
@@ -104,7 +104,7 @@ exports.run = (client, message, args) => {
       
         Moderação.on('collect', r2 => { 
             let mod = new Discord.RichEmbed()
-                .setTitle("<a:staffcdm:614759344072032268>┆Comandos de Moderação")
+                .setTitle(":robot;┆Comandos de Moderação")
                 .setDescription(`» \`${config.prefix}allunban\` - Desbane todos os usuários do seu servidor.`)
                 .setColor("#ff47ec")
                 .setThumbnail("https://cdn.discordapp.com/emojis/614759344072032268.gif?v=1")
@@ -115,7 +115,7 @@ exports.run = (client, message, args) => {
 
         Nsfw.on('collect', r2 => { 
             let nsfw = new Discord.RichEmbed()
-                .setTitle("<:18cdm:725489548083331213>┆Comandos de Nsfw")
+                .setTitle(":underage:┆Comandos de Nsfw")
                 .setDescription(`» \`${config.prefix}nsfw\` - Manda um gif aleatório de Nsfw.\n\n` +
                                 `» \`${config.prefix}4k\` - Foto em 4k aleatória.\n\n` +
                                 `» \`${config.prefix}pussy\` - Foto/gif de uma buceta.\n\n` +
@@ -130,7 +130,7 @@ exports.run = (client, message, args) => {
 
         Sobre.on('collect', r2 => { 
            let sobre = new Discord.RichEmbed()
-                .setTitle("<:chatcdm:614407735043424256>┆Sobre mim")
+                .setTitle(":thought_balloon:┆Sobre mim")
                 .setDescription(`**Olá, eu sou a  ${client.user.username}, um bot [Brasileiro](https://pt.wikipedia.org/wiki/Brasil) :flag_br: focado em anúncios DM e divulgação criado em [Javascript](https://nodejs.org/pt-br/) <:jscdm:614400268901023754>, atualmente estou hospedo em uma host free a [Glitch](https://glitch.com/) <:glitchcdm:614400605078814731>, mais estou em busca de uma VPS boa.\n\nAtualmente estou em ${client.guilds.size} servidores com um total de ${client.users.size} usuários!**`)
                 .setThumbnail(client.user.avatarURL)
                 .addField('<:7774:593646210187919380> Me adicione em seu servidor:', `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=610280094799233025&permissions=2146958847&scope=bot)**`)
