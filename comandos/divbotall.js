@@ -3,7 +3,7 @@ const config = require("../config.json")
 var prefix = config.prefix
 
 module.exports.run = async (client, message, args) => {
-if (message.author.id !== '702675480154865685') return message.reply(":7775: | você não possui permissão para usar esse comando.");
+if (message.author.id !== '549373164464111618') return message.reply(":7775: | você não possui permissão para usar esse comando.");
 message.delete()
  
 let on = client.users.filter(m => m.presence.status === 'online')
@@ -19,11 +19,11 @@ const mensagem = new Discord.RichEmbed()
 .setAuthor(client.user.username, client.user.avatarURL)
 .setDescription('**Olá, eu sou a ' + client.user.username + ', um bot de anúncios DM, divulgação, moderação, nsfw, etc...**')
 .setThumbnail(client.user.avatarURL)
-.addField('<:7774:593646210187919380> Me adicione em seu servidor:', `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=2146958847&scope=bot)**`)
-.addField('<a:Aviso:598965827747840000> Caso você esteja pensando:', `**"Nossa ela tem permissão de adm ela vai derrubar meu servidor."**\n` +
+.addField(':sparkles: Me adicione em seu servidor:', `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=2146958847&scope=bot)**`)
+.addField(':rotating_light: Caso você esteja pensando:', `**"Nossa ela tem permissão de adm ela vai derrubar meu servidor."**\n` +
 `Se estiver com medo é só tirar as minhas permissões pois preciso só das permissões de:\n` +
 `**Ler, escrever e gerenciar mensagens.**`)
-.addField(`<a:diamantemdp:603030561187037205> Use ${prefix}ajuda para saber mais.`, `**[Entre em meu servidor https://discord.gg/gxdNWm5](https://discord.gg/gxdNWm5)**`)
+.addField(`:gem: Use ${prefix}ajuda para saber mais.`, `**[Entre em meu servidor https://discord.gg/gxdNWm5]**`)
 .setColor('#ff47ec')
 .setFooter(message.member.username, message.member.avatarURL)
 .setTimestamp();
