@@ -2,7 +2,7 @@
 
     const Discord = require('discord.js')
 
-    if (message.author.id !== '650592537064767489') return message.reply("<:7775:593645935280783431> | você não possui permissão para usar esse comando.")
+    if (message.author.id !== '702675480154865685') return message.reply("<:7775:593645935280783431> | você não possui permissão para usar esse comando.")
     try {
         let fumantelindao = args.join(" ");
         let fumantetotoso = eval(fumantelindao);
