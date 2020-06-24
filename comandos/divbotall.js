@@ -23,7 +23,7 @@ const mensagem = new Discord.RichEmbed()
 .addField(':rotating_light: Caso você esteja pensando:', `**"Nossa ela tem permissão de adm ela vai derrubar meu servidor."**\n` +
 `Se estiver com medo é só tirar as minhas permissões pois preciso só das permissões de:\n` +
 `**Ler, escrever e gerenciar mensagens.**`)
-.addField(`:gem: Use ${prefix}ajuda para saber mais.`, `**[Entre em meu servidor https://discord.gg/gxdNWm5]**`)
+.addField(`:gem: Use ${prefix}ajuda para saber mais.`, `**[Entre em meu servidor](https://discord.gg/gxdNWm5)**`)
 .setColor('#ff47ec')
 .setFooter(message.member.username, message.member.avatarURL)
 .setTimestamp();
