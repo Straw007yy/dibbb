@@ -18,7 +18,7 @@ exports.run = (client, message, args) => {
 <a:staffcdm:614759344072032268> Comandos de **Moderação**
 <:18cdm:614653146689437697> Comandos de **Nsfw**
 <:chatcdm:614407735043424256> **Sobre mim**
-<a:voltar2cdm:614540655888171038> **Voltar** ao painel
+<:underage:> **Voltar** ao painel
 
 :link: **[Clique aqui para me Adicionar](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=2146958847&scope=bot)**`)
         .setColor('#ff47ec')
@@ -32,7 +32,7 @@ exports.run = (client, message, args) => {
             c.react('614759344072032268').then(() => {
             c.react('614653146689437697').then(() => {
             c.react('614407735043424256').then(() => {
-            c.react('614540655888171038').then(() => {
+            c.react('725397637809045525').then(() => {
         })
         })
         })
@@ -48,7 +48,7 @@ exports.run = (client, message, args) => {
         let ModeraçãoFilter = (reaction, user, ) => reaction.emoji.id === '614759344072032268' && user.id === message.author.id;
         let NsfwFilter = (reaction, user, ) => reaction.emoji.id === '614653146689437697' && user.id === message.author.id;
         let SobreFilter = (reaction, user, ) => reaction.emoji.id === '614407735043424256' && user.id === message.author.id;
-        let VoltarFilter = (reaction, user, ) => reaction.emoji.id === '614540655888171038' && user.id === message.author.id;
+        let VoltarFilter = (reaction, user, ) => reaction.emoji.id === '725397637809045525' && user.id === message.author.id;
         let Anúncio = c.createReactionCollector(AnúncioFilter, { time: 80000 });
         let Utilidade = c.createReactionCollector(UtilidadeFilter, { time: 80000 });
         let Status = c.createReactionCollector(StatusFilter, { time: 80000 });
