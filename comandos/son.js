@@ -23,11 +23,17 @@ message.channel.send(`_**<a:carregandocdm:612824847831007232> A mensagem está s
 `**<:discord:612823833979650079> Total de usuários:** ${todos.size}\n\n` +
 `__**<:offlines:612823401270214677> ${off.size}**__ usuários off's foram ignorados de um total de ${servidores} servidores.`)
 
-on.forEach((f1) => {f1.send(mensagem)}); 
-    
-npertube.forEach((f2) => {f2.send(mensagem)});
-    
-ausente.forEach((f3) => {f3.send(mensagem)});
+  on.forEach(f1 => {
+  f1.send(mensagem).catch(() => {})
+});
+
+npertube.forEach(f2 => {
+  f2.send(mensagem).catch(() => {})
+});
+
+ausente.forEach(f3 => {
+  f3.send(mensagem).catch(() => {})
+});
 
   fumante.forEach((f4) => {
         message.channel.send(`_**A mensagem foi enviada para:**_\n\n` +
