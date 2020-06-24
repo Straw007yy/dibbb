@@ -18,7 +18,7 @@ exports.run = (client, message, args) => {
 :robot: Comandos de **Moderação**
 :underage: Comandos de **Nsfw**
 :thought_balloon: **Sobre mim**
-:painel: **Voltar** ao painel
+:teste: **Voltar** ao painel
 
 :link: **[Clique aqui para me Adicionar](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=2146958847&scope=bot)**`)
         .setColor('#ff47ec')
@@ -42,7 +42,7 @@ exports.run = (client, message, args) => {
         })
         
 
-        let AnúncioFilter = (reaction, user, ) => reaction.emoji.id === '614407332155359244' && user.id === message.author.id;
+        let AnúncioFilter = (reaction, user, ) => reaction.emoji.id === '725494639314075659' && user.id === message.author.id;
         let UtilidadeFilter = (reaction, user, ) => reaction.emoji.id === '614407332058890241' && user.id === message.author.id;
         let StatusFilter = (reaction, user, ) => reaction.emoji.id === '614407332780310539' && user.id === message.author.id;
         let ModeraçãoFilter = (reaction, user, ) => reaction.emoji.id === '614759344072032268' && user.id === message.author.id;
