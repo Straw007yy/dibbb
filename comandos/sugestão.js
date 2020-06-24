@@ -15,7 +15,7 @@ module.exports.run = (client, message, args) => {
         .setTitle(`${message.author.tag} | Sugestão`, message.author.avatarURL)
         .setTimestamp(new Date())
 
-    let canal = client.channels.get('724769762416001066')
+    let canal = client.channels.get('725356609202815037')
 
     message.delete();
     canal.send(embed).then(msg => 
