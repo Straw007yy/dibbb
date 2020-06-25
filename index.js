@@ -45,7 +45,7 @@ client.on("message", message => {
   } catch (e) {
     console.error(e.stack);
     message.reply(
-      "**Esse comando não existe ou foi ultilizado de maneira incorreta! **<a:AlertA:724776196847435827>"
+      "**Esse comando não existe ou foi ultilizado de maneira incorreta! **:rotating_light:"
     );
   }
 
@@ -80,7 +80,7 @@ client.on("message", message => {
       .setTitle(`Olá ${message.author.tag} está perdido?`)
       .setDescription(
         `Se você se encontra com dúvidas do que eu posso fazer dirija-se rapidamente a um chat de comandos e digite: ${prefix}ajuda\n\n` +
-          `<a:charmander:594967880311767290> Suporte: [Clique aqui](https://discord.gg/ASJJGgh)`
+          `:loudspeaker: Suporte: [Clique aqui](https://discord.gg/gxdNWm5)`
       )
       .setThumbnail(client.user.avatarURL)
       .setColor("#ff47ec");
@@ -91,7 +91,7 @@ client.on("message", message => {
 
 client.on("guildCreate", guild => {
   const moment = require("moment");
-  let canal = client.channels.get("725102557222928395");
+  let canal = client.channels.get("725723765153202556");
   let icon = guild.iconURL || "https://loritta.website/assets/img/unknown.png";
   let embedentrada = new Discord.RichEmbed()
     .setAuthor(`${client.user.username}`, client.user.avatarURL)
@@ -115,7 +115,7 @@ client.on("guildCreate", guild => {
 
 client.on("guildDelete", guild => {
   const moment = require("moment");
-  let canal = client.channels.get("725102557222928395");
+  let canal = client.channels.get("725723311950135416");
   let icon = guild.iconURL || "https://loritta.website/assets/img/unknown.png";
   let embedsaida = new Discord.RichEmbed()
     .setAuthor(`${client.user.username}`, client.user.avatarURL)
@@ -230,18 +230,18 @@ client.on("guildCreate", guild => {
     )
     .setThumbnail(client.user.avatarURL)
     .addField(
-      "<:7774:593646210187919380> Me adicione em seu servidor:",
+      ":sparkles: Me adicione em seu servidor:",
       `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=2146958847&scope=bot)**`
     )
     .addField(
-      "<a:Aviso:598965827747840000> Caso você esteja pensando:",
+      ":rotating_light: Caso você esteja pensando:",
       `**"Nossa ela tem permissão de adm ela vai derrubar meu servidor."**\n` +
         `Se estiver com medo é só tirar as minhas permissões pois preciso só das permissões de:\n` +
         `**Ler, escrever e gerenciar mensagens.**`
     )
     .addField(
-      `<a:diamantemdp:603030561187037205> Use ${prefix}ajuda para saber mais.`,
-      `**[Entre em meu servidor https://discord.gg/9rnrkQ3](https://discord.gg/9rnrkQ3)**`
+      `:gem: Use ${prefix}ajuda para saber mais.`,
+      `**[Entre em meu servidor](https://discord.gg/gxdNWm5)**`
     )
     .setColor("#ff47ec")
     .setFooter(client.user.username, client.user.avatarURL)
