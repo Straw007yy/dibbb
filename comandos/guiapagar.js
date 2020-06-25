@@ -4,7 +4,7 @@ const config = require("../config.json")
 module.exports.run = async (client, message, args) => {
 
   const a = client.emojis.find(emoji => emoji.name === "errorbot");
-  const b = client.emojis.find(emoji => emoji.name === "1amora");
+  const b = client.emojis.find(emoji => emoji.name === "<a:um:725842533401493655>");
   const c = client.emojis.find(emoji => emoji.name === "2amora");
   const d = client.emojis.find(emoji => emoji.name === "3amora");
   const e = client.emojis.find(emoji => emoji.name === "4amora");
@@ -22,7 +22,7 @@ module.exports.run = async (client, message, args) => {
   let embed = new Discord.RichEmbed()
   .setTitle(`${h} **Delete Messages**`)
   .setAuthor(client.user.tag, client.user.displayAvatarURL)
-  .setDescription(`${emojis[0]} **Onlines (DM)**\n` +
+  .setDescription(`<a:um:725842533401493655> **Onlines (DM)**\n` +
                   `${emojis[1]} **Todos (DM)**\n` +
                   `${emojis[2]} **Servidores**\n` + 
                   `${emojis[3]} **Tudo (Servidores e DM)**`)
