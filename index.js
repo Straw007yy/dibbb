@@ -181,6 +181,11 @@ client.on("ready", () => {
 
   let status = [
     {
+      name: ` Em ${client.users.size} Usuário, Em ${client.guilds.size} Servidores.`,
+      type: "STREAMING",
+      url: "https://discord.gg/projetox"
+    },
+    {
       name: `Suas sugestões`,
       type: "LISTENING",
       url: "https://discord.gg/projetox"
