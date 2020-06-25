@@ -11,28 +11,28 @@ exports.run = (client, message, args) => {
 
     let embed = new Discord.RichEmbed()
         .setAuthor(client.user.username, client.user.avatarURL)
-        .setTitle(`<a:CarregandoBots:725399340419383318> Clique no emoji parar abrir a categoria...`, `** **`)
-        .setDescription(`a<:sinocdm:725506380093587527> Comandos de **Anúncio**
-:hammer: Comandos de **Utilidade**
-:desktop: Comandos de **Status**
-:robot: Comandos de **Moderação**
-:underage: Comandos de **Nsfw**
-:thought_balloon: **Sobre mim**
-:teste: **Voltar** ao painel
+        .setTitle(`<a:discordgira:725745454138130542> Clique no emoji parar abrir a categoria...`, `** **`)
+        .setDescription(` <a:sinocdm:725745018513522809> Comandos de **Anúncio**
+<a:Hypebot:725767567779823716> Comandos de **Utilidade**
+<a:CarregandoBots:725399209288794154> Comandos de **Status**
+<a:staffcdm:725774414280392724> Comandos de **Moderação**
+<a:hotbot:725776630613540936> Comandos de **Nsfw**
+<:chatcdm:725745564972744814> **Sobre mim**
+<a:seta2cdm:725745097097871381> **Voltar** ao painel
 
-:link: **[Clique aqui para me Adicionar](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=2146958847&scope=bot)**`)
+<:link:725833477563613355> **[Clique aqui para me Adicionar](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=2146958847&scope=bot)**`)
         .setColor('#ff47ec')
         .setThumbnail(botav)
         .setFooter(user + ' • Painel de ajuda', av)
     
     message.channel.send(embed).then((c) => {
-            c.react('725506380093587527').then(() => {
-            c.react('614407332058890241').then(() => {
-            c.react('614407332780310539').then(() => {
-            c.react('614759344072032268').then(() => {
-            c.react('725489548083331213').then(() => {
-            c.react('614407735043424256').then(() => {
-            c.react(':sparkles:').then(() => {
+            c.react('725745018513522809').then(() => {
+            c.react('725767567779823716').then(() => {
+            c.react('725399209288794154').then(() => {
+            c.react('725774414280392724').then(() => {
+            c.react('725776630613540936').then(() => {
+            c.react('725745564972744814').then(() => {
+            c.react('725745097097871381').then(() => {
         })
         })
         })
@@ -42,13 +42,13 @@ exports.run = (client, message, args) => {
         })
         
 
-        let AnúncioFilter = (reaction, user, ) => reaction.emoji.id === '725506380093587527' && user.id === message.author.id;
-        let UtilidadeFilter = (reaction, user, ) => reaction.emoji.id === '614407332058890241' && user.id === message.author.id;
-        let StatusFilter = (reaction, user, ) => reaction.emoji.id === '614407332780310539' && user.id === message.author.id;
-        let ModeraçãoFilter = (reaction, user, ) => reaction.emoji.id === '614759344072032268' && user.id === message.author.id;
-        let NsfwFilter = (reaction, user, ) => reaction.emoji.id === '725489548083331213' && user.id === message.author.id;
-        let SobreFilter = (reaction, user, ) => reaction.emoji.id === '614407735043424256' && user.id === message.author.id;
-        let VoltarFilter = (reaction, user, ) => reaction.emoji.id === '725397637809045525' && user.id === message.author.id;
+        let AnúncioFilter = (reaction, user, ) => reaction.emoji.id === '725745018513522809' && user.id === message.author.id;
+        let UtilidadeFilter = (reaction, user, ) => reaction.emoji.id === '725767567779823716' && user.id === message.author.id;
+        let StatusFilter = (reaction, user, ) => reaction.emoji.id === '725399209288794154' && user.id === message.author.id;
+        let ModeraçãoFilter = (reaction, user, ) => reaction.emoji.id === '725774414280392724' && user.id === message.author.id;
+        let NsfwFilter = (reaction, user, ) => reaction.emoji.id === '725776630613540936' && user.id === message.author.id;
+        let SobreFilter = (reaction, user, ) => reaction.emoji.id === '725745564972744814' && user.id === message.author.id;
+        let VoltarFilter = (reaction, user, ) => reaction.emoji.id === '725745097097871381' && user.id === message.author.id;
         let Anúncio = c.createReactionCollector(AnúncioFilter, { time: 80000 });
         let Utilidade = c.createReactionCollector(UtilidadeFilter, { time: 80000 });
         let Status = c.createReactionCollector(StatusFilter, { time: 80000 });
@@ -60,7 +60,7 @@ exports.run = (client, message, args) => {
 
         Anúncio.on('collect', r2 => { 
            let anuncio = new Discord.RichEmbed()
-                .setTitle(":bell:┆Comandos para Anúncio")
+                .setTitle("<a:sinocdm:725745018513522809>┆Comandos para Anúncio")
                 .setDescription(`» \`${config.prefix}aviso\` (msg) - Manda um aviso a todos do seu servidor.\n\n` +
                 `» \`${config.prefix}avisoembed\` | titulo | descrição | link de foto ou gif |\n` +
                 `Manda um aviso em embed a todos do seu servidor.\n` +
@@ -68,14 +68,14 @@ exports.run = (client, message, args) => {
                 `Obs: não tire os separadores |\n\n` +
                 `» \`${config.prefix}divbot\` - Me divulga em seu servidor.\n\n`)
                 .setColor("#ff47ec")
-                .setThumbnail("https://cdn.discordapp.com/emojis/725506380093587527.gif?v=1")
+                .setThumbnail("https://cdn.discordapp.com/emojis/725745018513522809.gif?v=1")
                 .setFooter(user + " • Pág. 1/6", av)
             c.edit(anuncio);
         });
 
         Utilidade.on('collect', r2 => { 
             let util = new Discord.RichEmbed()
-                .setTitle(":hammer:┆Comandos de Utilidade")
+                .setTitle("<a:Hype_bot:725767567779823716>┆Comandos de Utilidade")
                 .setDescription(`» \`${config.prefix}responder (id/menção) (msg)\` - Manda uma mensagem no privado de um usuário com o bot.\n\n` +
                 `» \`${config.prefix}say (msg)\` - Manda uma mensagem com o bot.\n\n` +
                 `» \`${config.prefix}cc\` - Cria um convite permanente do servidor.\n\n` +
@@ -84,30 +84,30 @@ exports.run = (client, message, args) => {
                 `» \`${config.prefix}clima (cidade)\` - Mostra o clima de uma cidade.\n\n` +
                 `» \`${config.prefix}timer (tempo em segundos)\` - Apaga sua mensagem depois de um determinado tempo.`)
                 .setColor("#ff47ec")
-                .setThumbnail("https://cdn.discordapp.com/emojis/614407332058890241.gif?v=1")
+                .setThumbnail("https://cdn.discordapp.com/emojis/725767567779823716.gif?v=1")
                 .setFooter(user + " • Pág. 2/6", av)
             c.edit(util);
         });
         
         Status.on('collect', r2 => { 
             let status = new Discord.RichEmbed()
-                .setTitle(":desktop:┆Comandos de Status")
+                .setTitle("<a:CarregandoBots:725399209288794154>┆Comandos de Status")
                 .setDescription(`» \`${config.prefix}sugestão (sugestão)\` - Me manda uma sugestão.\n\n` +
                 `» \`${config.prefix}bug (bug)\` - Reporta um bug no bot.\n\n` +
                 `» \`${config.prefix}ping\` - Mostra o ping do bot.\n\n` +
                 `» \`${config.prefix}convite\` - Mostra o meu convite.`)
                 .setColor("#ff47ec")
-                .setThumbnail("https://cdn.discordapp.com/emojis/614407332780310539.gif?v=1")
+                .setThumbnail("https://cdn.discordapp.com/emojis/725399209288794154.gif?v=1")
                 .setFooter(user + " • Pág. 3/6", av)
             c.edit(status);
         });
       
         Moderação.on('collect', r2 => { 
             let mod = new Discord.RichEmbed()
-                .setTitle(":robot;┆Comandos de Moderação")
+                .setTitle("<a:staffcdm:725774414280392724>┆Comandos de Moderação")
                 .setDescription(`» \`${config.prefix}allunban\` - Desbane todos os usuários do seu servidor.`)
                 .setColor("#ff47ec")
-                .setThumbnail("https://cdn.discordapp.com/emojis/614759344072032268.gif?v=1")
+                .setThumbnail("https://cdn.discordapp.com/emojis/725774414280392724.gif?v=1")
                 .setFooter(user + " • Pág. 4/6", av)
             c.edit(mod);
         });
@@ -115,7 +115,7 @@ exports.run = (client, message, args) => {
 
         Nsfw.on('collect', r2 => { 
             let nsfw = new Discord.RichEmbed()
-                .setTitle(":underage:┆Comandos de Nsfw")
+                .setTitle("<a:hotbot:725776630613540936>┆Comandos de Nsfw")
                 .setDescription(`» \`${config.prefix}nsfw\` - Manda um gif aleatório de Nsfw.\n\n` +
                                 `» \`${config.prefix}4k\` - Foto em 4k aleatória.\n\n` +
                                 `» \`${config.prefix}pussy\` - Foto/gif de uma buceta.\n\n` +
@@ -123,19 +123,19 @@ exports.run = (client, message, args) => {
                                 `» \`${config.prefix}anal\` - Foto com brinquedos anais.\n\n` +
                                 `» \`${config.prefix}hentai\` - Hentai.`)
                 .setColor("#ff47ec")
-                .setThumbnail("https://cdn.discordapp.com/emojis/614653146689437697.png?v=1")
+                .setThumbnail("https://cdn.discordapp.com/emojis/725776630613540936.gif?v=1")
                 .setFooter(user + " • Pág. 5/6", av)
             c.edit(nsfw);
         });
 
         Sobre.on('collect', r2 => { 
            let sobre = new Discord.RichEmbed()
-                .setTitle(":thought_balloon:┆Sobre mim")
-                .setDescription(`**Olá, eu sou a  ${client.user.username}, um bot [Brasileiro](https://pt.wikipedia.org/wiki/Brasil) :flag_br: focado em anúncios DM e divulgação criado em [Javascript](https://nodejs.org/pt-br/) <:jscdm:614400268901023754>, atualmente estou hospedo em uma host free a [Glitch](https://glitch.com/) <:glitchcdm:614400605078814731>, mais estou em busca de uma VPS boa.\n\nAtualmente estou em ${client.guilds.size} servidores com um total de ${client.users.size} usuários!**`)
+                .setTitle("<:chatcdm:725745564972744814>┆Sobre mim")
+                .setDescription(`**Olá, eu sou a  ${client.user.username}, um bot [Brasileiro](https://pt.wikipedia.org/wiki/Brasil) :flag_br: focado em anúncios DM e divulgação criado em [Javascript](https://nodejs.org/pt-br/) <:jscdm:725780030524752377>, atualmente estou hospedo em uma host free a [Glitch](https://glitch.com/) <:glitchcdm:725780332137414776>, mais estou em busca de uma VPS boa.\n\nAtualmente estou em ${client.guilds.size} servidores com um total de ${client.users.size} usuários!**`)
                 .setThumbnail(client.user.avatarURL)
-                .addField('<:7774:593646210187919380> Me adicione em seu servidor:', `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=610280094799233025&permissions=2146958847&scope=bot)**`)
+                .addField('<a:add:725781103851470959> Me adicione em seu servidor:', `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=610280094799233025&permissions=2146958847&scope=bot)**`)
                 .setColor("#ff47ec")
-                .setThumbnail("https://cdn.discordapp.com/emojis/614407735043424256.png?v=1")
+                .setThumbnail("https://cdn.discordapp.com/emojis/725745564972744814.jpg?v=1 ")
                 .setFooter(user + " • Pág. 6/6", av)
             c.edit(sobre);
         });

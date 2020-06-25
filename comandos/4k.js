@@ -18,7 +18,7 @@ const canal = new Discord.RichEmbed()
     const { body } = await get("https://nekobot.xyz/api/image?type=4k");
     if (!message.channel.nsfw) return message.reply(canal);
 const embed = new Discord.RichEmbed()
-.setDescription(`<:18cdm:614653146689437697> **[Sem imagem? Clique aqui!](${body.message})**`)
+.setDescription(`<a:fogo:725831655679328377> **[Sem imagem? Clique aqui!](${body.message})**`)
 .setImage(body.message)
 .setColor("RANDOM")
 .setFooter(user, av)

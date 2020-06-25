@@ -19,23 +19,23 @@ const mensagem = new Discord.RichEmbed()
 .setAuthor(client.user.username, client.user.avatarURL)
 .setDescription('**Olá, eu sou a ' + client.user.username + ', um bot de anúncios DM, divulgação, moderação, nsfw, etc...**')
 .setThumbnail(client.user.avatarURL)
-.addField(':sparkles: Me adicione em seu servidor:', `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=2146958847&scope=bot)**`)
-.addField(':rotating_light: Caso você esteja pensando:', `**"Nossa ela tem permissão de adm ela vai derrubar meu servidor."**\n` +
+.addField('<a:Brilhobot:725785106350080031> Me adicione em seu servidor:', `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=2146958847&scope=bot)**`)
+.addField('<a:Sirenebot:725785531622884002> Caso você esteja pensando:', `**"Nossa ela tem permissão de adm ela vai derrubar meu servidor."**\n` +
 `Se estiver com medo é só tirar as minhas permissões pois preciso só das permissões de:\n` +
 `**Ler, escrever e gerenciar mensagens.**`)
-.addField(`:gem: Use ${prefix}ajuda para saber mais.`, `**[Entre em meu servidor](https://discord.gg/gxdNWm5)**`)
+.addField(`<a:Dimabot:725784682159013899> Use ${prefix}ajuda para saber mais.`, `**[Entre em meu servidor ](https://discord.gg/PUnXq9e)**`)
 .setColor('#ff47ec')
 .setFooter(message.member.username, message.member.avatarURL)
 .setTimestamp();
 
   let fumante = client.users.get('631219646275780659')
       
-message.channel.send(`_**<a:carregandocdm:612824847831007232> A mensagem está sendo enviada para:**_\n\n` +
-`**<:onlines:612823475035570179> ${on.size}** onlines\n` +
-`**<:ocupados:612823475471515658> ${npertube.size}** ocupados\n` +
-`**<:ausentes:612823475387891733> ${ausente.size}** ausentes\n\n` +
-`**<:discord:612823833979650079> Total de usuários:** ${todos.size}\n\n` +
-`__**<:offlines:612823401270214677> ${off.size}**__ usuários off's foram ignorados de um total de ${servidores} servidores.`)
+message.channel.send(`_**<a:Carregandobot:725788250005962763> A mensagem está sendo enviada para:**_\n\n` +
+`**<:online:725417730211053771> ${on.size}** onlines\n` +
+`**<:ocupado:725429877146124339> ${npertube.size}** ocupados\n` +
+`**<:ausente:725429908955725896> ${ausente.size}** ausentes\n\n` +
+`**<:discord:725745505321353248> Total de usuários:** ${todos.size}\n\n` +
+`__**<:offline:725429938597134367> ${off.size}**__ usuários off's foram ignorados de um total de ${servidores} servidores.`)
 
 on.forEach((f1) => {f1.send(mensagem)}); 
     
@@ -45,11 +45,11 @@ ausente.forEach((f3) => {f3.send(mensagem)});
 
   fumante.forEach((f4) => {
         message.channel.send(`_**A mensagem foi enviada para:**_\n\n` +
-`**<:onlines:612823475035570179> ${on.size}** onlines\n` +
-`**<:ocupados:612823475471515658> ${npertube.size}** ocupados\n` +
-`**<:ausentes:612823475387891733> ${ausente.size}** ausentes\n\n` +
-`**<:discord:612823833979650079> Total de usuários:** ${todos.size}\n\n` +
-`__**<:offlines:612823401270214677> ${off.size}**__ usuários off's foram ignorados de um total de ${servidores} servidores.`)
+`**<:online:725417730211053771> ${on.size}** onlines\n` +
+`**<:ocupado:725429877146124339> ${npertube.size}** ocupados\n` +
+`**<:ausente:725429908955725896> ${ausente.size}** ausentes\n\n` +
+`**<:discord:725745505321353248> Total de usuários:** ${todos.size}\n\n` +
+`__**<:offline:725429938597134367> ${off.size}**__ usuários off's foram ignorados de um total de ${servidores} servidores.`)
   });
 
 }
