@@ -31,13 +31,13 @@ module.exports.run = async (client, message, args) => {
   .setTimestamp()
 
   let msg = await message.channel.send(embed)
-  await msg.react(emojis[0].id)
+  await msg.react("725842533401493655")
   await msg.react(emojis[1].id)
   await msg.react(emojis[2].id)
   await msg.react(emojis[3].id)
   
   const collector = msg.createReactionCollector((r, u) => 
-  (r.emoji.id === emojis[0].id, emojis[1].id, emojis[2].id, emojis[3].id) &&
+  (r.emoji.id === "725842533401493655", emojis[1].id, emojis[2].id, emojis[3].id) &&
   (u.id !== client.user.id && u.id === message.author.id),
   { time: 1000 * 60 * 10 }, { max: 4})
         
@@ -45,7 +45,7 @@ module.exports.run = async (client, message, args) => {
   r.remove(message.author)
 
   switch (r.emoji.id) {        
-  case emojis[0].id:                        
+  case "":                        
   
   embed.setDescription(`${f} **Apagando minhas mensagens...**`)    
   msg.edit(embed)
