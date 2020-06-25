@@ -191,8 +191,13 @@ client.on("ready", () => {
       url: "https://discord.gg/projetox"
     },
     {
-      name: `Jaum Mais Lindo Do Discord`,
-      type: "STREAMING",
+      name: `Jaum No topo`,
+      type: "PLAYING",
+      url: "https://discord.gg/projetox"
+    },
+    {
+      name: `Gui Owna No Topo`,
+      type: "PLAYING",
       url: "https://discord.gg/projetox"
     },
     {
