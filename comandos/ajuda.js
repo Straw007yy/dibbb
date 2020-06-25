@@ -26,7 +26,7 @@ exports.run = (client, message, args) => {
         .setFooter(user + ' • Painel de ajuda', av)
     
     message.channel.send(embed).then((c) => {
-            c.react('725494639314075659').then(() => {
+            c.react('725500245642838118').then(() => {
             c.react('614407332058890241').then(() => {
             c.react('614407332780310539').then(() => {
             c.react('614759344072032268').then(() => {
@@ -42,7 +42,7 @@ exports.run = (client, message, args) => {
         })
         
 
-        let AnúncioFilter = (reaction, user, ) => reaction.emoji.id === '725494639314075659' && user.id === message.author.id;
+        let AnúncioFilter = (reaction, user, ) => reaction.emoji.id === '725500245642838118' && user.id === message.author.id;
         let UtilidadeFilter = (reaction, user, ) => reaction.emoji.id === '614407332058890241' && user.id === message.author.id;
         let StatusFilter = (reaction, user, ) => reaction.emoji.id === '614407332780310539' && user.id === message.author.id;
         let ModeraçãoFilter = (reaction, user, ) => reaction.emoji.id === '614759344072032268' && user.id === message.author.id;
