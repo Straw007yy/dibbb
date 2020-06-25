@@ -100,4 +100,4 @@ await console.log(msg.content)
       break  
   }   
   })
-};
+};ou

@@ -19,10 +19,9 @@ message.delete();
             .setThumbnail(client.user.displayAvatarURL)
             message.channel.send(embed).then(async ser => {
 
-                if(servers.size > 10) {
-
-                    await ser.react("⬅");
-                    await ser.react("➡");
+                if(servers.size > 10)
+                    await msg.react("725791477099266120");
+                    await msg.react("725791515628011621");
                     
                     const voltar = ser.createReactionCollector((r, u) => r.emoji.name === "⬅" && u.id === message.author.id, { time: 100000 });
                     const proximo = ser.createReactionCollector((r, u) => r.emoji.name === "➡" && u.id === message.author.id, { time: 100000 });
