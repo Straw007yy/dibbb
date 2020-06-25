@@ -26,7 +26,7 @@ exports.run = (client, message, args) => {
         .setFooter(user + ' • Painel de ajuda', av)
     
     message.channel.send(embed).then((c) => {
-            c.react('725503426829746208').then(() => {
+            c.react('725506380093587527').then(() => {
             c.react('614407332058890241').then(() => {
             c.react('614407332780310539').then(() => {
             c.react('614759344072032268').then(() => {
@@ -42,7 +42,7 @@ exports.run = (client, message, args) => {
         })
         
 
-        let AnúncioFilter = (reaction, user, ) => reaction.emoji.id === '725503426829746208' && user.id === message.author.id;
+        let AnúncioFilter = (reaction, user, ) => reaction.emoji.id === '725506380093587527' && user.id === message.author.id;
         let UtilidadeFilter = (reaction, user, ) => reaction.emoji.id === '614407332058890241' && user.id === message.author.id;
         let StatusFilter = (reaction, user, ) => reaction.emoji.id === '614407332780310539' && user.id === message.author.id;
         let ModeraçãoFilter = (reaction, user, ) => reaction.emoji.id === '614759344072032268' && user.id === message.author.id;
@@ -68,7 +68,7 @@ exports.run = (client, message, args) => {
                 `Obs: não tire os separadores |\n\n` +
                 `» \`${config.prefix}divbot\` - Me divulga em seu servidor.\n\n`)
                 .setColor("#ff47ec")
-                .setThumbnail("https://cdn.discordapp.com/emojis/725503426829746208.gif?v=1")
+                .setThumbnail("https://cdn.discordapp.com/emojis/725506380093587527.gif?v=1")
                 .setFooter(user + " • Pág. 1/6", av)
             c.edit(anuncio);
         });
