@@ -161,7 +161,7 @@ client.on("guildCreate", async guild => {
 
 client.on("ready", () => {
   let logs = client.channels.get("725102557222928395");
-  if (!logs) return console.log("725102557222928395");
+  if (!logs) return console.log("725378911994773624");
   logs.send(
     `O bot \`${client.user.username}\` foi iniciado, com ${client.users.size} usuários, em ${client.guilds.size} servidores.`
   );
@@ -175,7 +175,7 @@ client.on("ready", () => {
     game: {
       name: config.Status,
       type: "WATCHING, LISTENING, PLAYING, STREAMING",
-      url: "https://www.twitch.tv/fumante1533"
+      url: "https://discord.gg/projetox"
     }
   });
 
@@ -183,32 +183,32 @@ client.on("ready", () => {
     {
       name: `Suas sugestões`,
       type: "LISTENING",
-      url: "https://www.twitch.tv/fumante1533"
+      url: "https://discord.gg/projetox"
     },
     {
       name: `Seu servidor no topo`,
       type: "PLAYING",
-      url: "https://www.twitch.tv/fumante1533"
+      url: "https://discord.gg/projetox"
     },
     {
-      name: `Black Lives Matter`,
+      name: `Jaum Mais Lindo Do Discord`,
       type: "STREAMING",
-      url: "https://www.twitch.tv/fumante1533"
+      url: "https://discord.gg/projetox"
     },
     {
       name: `Meu prefixo é: ${prefix}`,
       type: "STREAMING",
-      url: "https://www.twitch.tv/fumante1533"
+      url: "https://discord.gg/projetox"
     },
     {
       name: `Gabrielle Aplin - Home`,
       type: "TOUCHING",
-      url: "https://www.twitch.tv/fumante1533"
+      url: "https://discord.gg/projetox"
     },
     {
       name: `Amor para você`,
       type: "STREAMING",
-      url: "https://www.twitch.tv/fumante1533"
+      url: "https://discord.gg/projetox"
     }
   ];
 
