@@ -11,7 +11,7 @@ message.delete();
             var pagina = 1;
             var totalPages = parseInt(servers.size/10+1);
             
-            var embed = new Discord.RichEmbed()
+             embed = new Discord.RichEmbed()
             .setDescription(`${servers.map(se=> `Nome: \`${se.name}\` - ID: \`${se.id}\` - Usuários: \`${se.memberCount}\``).slice(0,10).join('\n')}`)
             .setFooter(`Página ${pagina} de ${totalPages}`, message.author.displayAvatarURL)
             .setAuthor('Servidores em que Estou', client.user.displayAvatarURL)
