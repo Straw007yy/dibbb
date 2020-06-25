@@ -12,7 +12,7 @@ exports.run = (client, message, args) => {
     let embed = new Discord.RichEmbed()
         .setAuthor(client.user.username, client.user.avatarURL)
         .setTitle(`<a:CarregandoBots:725399340419383318> Clique no emoji parar abrir a categoria...`, `** **`)
-        .setDescription(`<a:bell:725503426829746208> Comandos de **Anúncio**
+        .setDescription(`a<:sinocdm:725506380093587527> Comandos de **Anúncio**
 :hammer: Comandos de **Utilidade**
 :desktop: Comandos de **Status**
 :robot: Comandos de **Moderação**
