@@ -20,7 +20,7 @@ exports.run = (client, message, args) => {
 <:chatcdm:725745564972744814> **Sobre mim**
 <a:seta2cdm:725745097097871381> **Voltar** ao painel
 
-<:link:725833477563613355> **[Clique aqui para me Adicionar](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=2146958847&scope=bot)**`)
+<:link:725833477563613355> **[Clique aqui para me Adicionar](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=3669057&scope=bot)**`)
         .setColor('#ff47ec')
         .setThumbnail(botav)
         .setFooter(user + ' • Painel de ajuda', av)
@@ -133,7 +133,7 @@ exports.run = (client, message, args) => {
                 .setTitle("<:chatcdm:725745564972744814>┆Sobre mim")
                 .setDescription(`**Olá, eu sou a  ${client.user.username}, um bot [Brasileiro](https://pt.wikipedia.org/wiki/Brasil) :flag_br: focado em anúncios DM e divulgação criado em [Javascript](https://nodejs.org/pt-br/) <:jscdm:725780030524752377>, atualmente estou hospedo em uma host free a [Glitch](https://glitch.com/) <:glitchcdm:725780332137414776>, mais estou em busca de uma VPS boa.\n\nAtualmente estou em ${client.guilds.size} servidores com um total de ${client.users.size} usuários!**`)
                 .setThumbnail(client.user.avatarURL)
-                .addField('<a:add:725781103851470959> Me adicione em seu servidor:', `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=610280094799233025&permissions=2146958847&scope=bot)**`)
+                .addField('<a:add:725781103851470959> Me adicione em seu servidor:', `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=3669057&scope=bot)**`)
                 .setColor("#ff47ec")
                 .setThumbnail("https://cdn.discordapp.com/emojis/725745564972744814.jpg?v=1 ")
                 .setFooter(user + " • Pág. 6/6", av)
