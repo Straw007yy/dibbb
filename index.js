@@ -211,8 +211,8 @@ client.on("ready", () => {
       url: "https://discord.gg/projetox"
     },
     {
-      name: `Gabrielle Aplin - Home`,
-      type: "TOUCHING",
+      name: `Discord.gg/projetox`,
+      type: "STREAMING",
       url: "https://discord.gg/projetox"
     },
     {
@@ -240,17 +240,17 @@ client.on("guildCreate", guild => {
     )
     .setThumbnail(client.user.avatarURL)
     .addField(
-      ":sparkles: Me adicione em seu servidor:",
+      "<a:Brilhobot:725785106350080031> Me adicione em seu servidor:",
       `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=2146958847&scope=bot)**`
     )
     .addField(
-      ":rotating_light: Caso você esteja pensando:",
+      "<a:Sirenebot:725785531622884002> Caso você esteja pensando:",
       `**"Nossa ela tem permissão de adm ela vai derrubar meu servidor."**\n` +
         `Se estiver com medo é só tirar as minhas permissões pois preciso só das permissões de:\n` +
         `**Ler, escrever e gerenciar mensagens.**`
     )
     .addField(
-      `:gem: Use ${prefix}ajuda para saber mais.`,
+      `<a:Dimabot:725784682159013899> Use ${prefix}ajuda para saber mais.`,
       `**[Entre em meu servidor](https://discord.gg/gxdNWm5)**`
     )
     .setColor("#ff47ec")
