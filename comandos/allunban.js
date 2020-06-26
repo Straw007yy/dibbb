@@ -4,13 +4,13 @@ module.exports.run = async (client, message, args) => {
         return 0;
     }
     if (!message.guild.me.hasPermission("BAN_MEMBERS", false, true)) {
-        message.reply("Eu não tenho permissão para desbanir usuários nesse servidor.");
+        message.reply("<a:atencao2:725829034214293650> Eu não tenho permissão para desbanir usuários nesse servidor.");
         return 0;
     }
     let bannedUsers = await message.guild.fetchBans().catch(()=>{});
     let size = bannedUsers.size;
     if (!size) {
-        message.reply("Não há usuários banidos neste servidor");
+        message.reply("<a:atencao2:725829034214293650> Não há usuários banidos neste servidor");
         return 0;
     }
     await message.channel.send(`Começando | 0/${size}`).then(async m => {
@@ -23,6 +23,6 @@ module.exports.run = async (client, message, args) => {
                 }
             }).catch(()=>{});
         }
-        m.edit("Todos os usuários foram desbanidos!");
+        m.edit("<a:acertou:725780792835309638> Todos os usuários foram desbanidos!<a:Brilhobot:725785106350080031>");
     }).catch(err => console.log(err));
 };
