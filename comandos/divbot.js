@@ -4,7 +4,7 @@ var prefix = config.prefix
 
 module.exports.run = (client,message,args)=>{
   if(!message.member.hasPermission("ADMINISTRATOR") && message.author.id !== '631219646275780659') return message.reply("<:7775:593645935280783431> | você não possui permissão para usar esse comando.")
-message.reply("Estou sendo divulgada...").then(msg => msg.delete(8000))
+message.reply("<a:acertou:725780792835309638> Estou sendo divulgada... <a:rosa_brilho:725865943607017502>").then(msg => msg.delete(8000))
   message.delete()
 
   const membros = message.guild.memberCount;
@@ -21,9 +21,9 @@ message.reply("Estou sendo divulgada...").then(msg => msg.delete(8000))
 
   let autorembed = new Discord.RichEmbed()
   .setTitle(client.user.username)
-  .setDescription(`<a:tetao1:593650200841814040> Olá, ${message.author} agradeço muito por me ajudar dando \`${prefix}divbot\` **no servidor** \`${message.guild.name}\``)
-  .setImage("https://i2.wp.com/coliriodemacho.com.br/wordpress/wp-content/uploads/2015/07/gifs-seios-6.gif")
-  .setThumbnail("https://cdn.discordapp.com/emojis/593650200841814040.gif")
+  .setDescription(`<a:coracao:725887100632694868> Olá, ${message.author} agradeço muito por me ajudar dando \`${prefix}divbot\` **no servidor** \`${message.guild.name}\``)
+  .setImage("https://cdn.discordapp.com/attachments/700103622054379570/701799584468434954/telecharge.gif")
+  .setThumbnail("https://cdn.discordapp.com/attachments/640568162135441408/700733216100974602/gif4.gif")
   .setColor("#ff47ec")
   autor.send(autorembed)
 
