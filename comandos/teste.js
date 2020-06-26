@@ -20,7 +20,7 @@ message.delete();
   message.channel.send(embed).then(async ser => {
 
                 if(servers.size > 10)
-                 await
+                 await message.embed
                   message.react('725791477099266120')
                   message.react('725791515628011621')
                     
