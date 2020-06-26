@@ -4,7 +4,7 @@ exports.run = (bot,message,args) => {
     message.delete();
     let embed = new Discord.RichEmbed()
 
-    .setTitle("🤖 Ping do bot")
+    .setTitle("<a:robo:725878687484084274> Ping do bot")
     .setColor("#ff47ec")
     .setDescription(`**O ping do bot é de ${Math.round(bot.ping)}ms!**`)
     .setThumbnail("https://cdn.discordapp.com/attachments/559509927354433551/585683011823992832/ezgif.com-resize.gif")
