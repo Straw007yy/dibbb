@@ -45,7 +45,7 @@ client.on("message", message => {
   } catch (e) {
     console.error(e.stack);
     message.reply(
-      "**Esse comando não existe ou foi ultilizado de maneira incorreta! **:rotating_light:"
+      "**Esse comando não existe ou foi ultilizado de maneira incorreta! **<a:Sirenebot:725785531622884002>"
     );
   }
 
@@ -57,13 +57,13 @@ client.on("message", message => {
 
     message.delete(1000);
     message.reply(
-      "**Você não pode enviar convites aki nesse servidor, o dono foi avisado!**"
+      "**<a:Sirenebot:725785531622884002> Você não pode enviar convites aki nesse servidor, o dono foi avisado!**"
     );
 
     let embed = new Discord.RichEmbed()
       .setAuthor("Anti Invite!")
       .setDescription(
-        "**Foi dectado que 1 usuario acaba de mandar 1 convite em seu servidor!**"
+        "**<a:Sirenebot:725785531622884002> Foi dectado que 1 usuario acaba de mandar 1 convite em seu servidor!**"
       )
       .addField("Nick:", message.author.tag)
       .addField("ID:", message.author.id)
@@ -79,8 +79,8 @@ client.on("message", message => {
 
       .setTitle(`Olá ${message.author.tag} está perdido?`)
       .setDescription(
-        `Se você se encontra com dúvidas do que eu posso fazer dirija-se rapidamente a um chat de comandos e digite: ${prefix}ajuda\n\n` +
-          `:loudspeaker: Suporte: [Clique aqui](https://discord.gg/gxdNWm5)`
+        `<a:rosa_brilho:725865943607017502> Se você se encontra com dúvidas do que eu posso fazer dirija-se rapidamente a um chat de comandos e digite: ${prefix}ajuda\n\n` +
+          `<a:coroa:725865197222363216> Suporte: [Clique aqui](https://discord.gg/PUnXq9e)`
       )
       .setThumbnail(client.user.avatarURL)
       .setColor("#ff47ec");
