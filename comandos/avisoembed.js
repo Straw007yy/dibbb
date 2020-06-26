@@ -7,8 +7,8 @@ module.exports.run = async (client, message, args) => {
     const perm = new Discord.RichEmbed()
         .setColor("#ff3636")
         .setThumbnail("https://i.pinimg.com/originals/bd/df/d6/bddfd6e4434f42662b009295c9bab86e.gif")
-        .addField(`<a:naocdm:613557508577165325>┆${message.author.username}`, `Você não tem permissão para usar este comando!`)
-        .addField(`❓┆Como consigo a permissão?`, `Você tem que o adicionar o cargo: "Perm da ${client.user.username}" que ja foi criado na minha entrada no servidor, caso não tenha crie!`)
+        .addField(`<a:atencao:725829034214293650>┆${message.author.username}`, `Você não tem permissão para usar este comando!`)
+        .addField(`┆Como consigo a permissão?`, `Você tem que o adicionar o cargo: "Perm da ${client.user.username}" que ja foi criado na minha entrada no servidor, caso não tenha crie!`)
 
 
     if (!message.member.roles.some(r=>[`Perm da ${client.user.username}`].includes(r.name)) )
