@@ -251,7 +251,7 @@ client.on("guildCreate", guild => {
     )
     .addField(
       `<a:Dimabot:725784682159013899> Use ${prefix}ajuda para saber mais.`,
-      `**[Entre em meu servidor](https://discord.gg/gxdNWm5)**`
+      `**[Entre em meu servidor](https://discord.gg/PUnXq9e)**`
     )
     .setColor("#ff47ec")
     .setFooter(client.user.username, client.user.avatarURL)
