@@ -9,7 +9,7 @@
       message.channel.overwritePermissions(unlock, {
         SEND_MESSAGES: true
        });
-       message.channel.send(`O canal ${message.channel} foi __desbloqueado__ com sucesso.`)
+       message.channel.send(`<a:acertou:725780792835309638> O canal ${message.channel} foi __desbloqueado__ com sucesso.`)
         }
 
 module.exports.help = {

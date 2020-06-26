@@ -11,7 +11,7 @@
         SEND_MESSAGES: false
       });
        
-      message.channel.send(`O canal ${message.channel} foi __bloqueado__ com sucesso.`);
+      message.channel.send(`<a:acertou:725780792835309638> O canal ${message.channel} foi __bloqueado__ com sucesso.`);
         }
 
 module.exports.help = {
