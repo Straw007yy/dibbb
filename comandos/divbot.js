@@ -29,13 +29,13 @@ message.reply("<a:acertou:725780792835309638> Estou sendo divulgada... <a:rosa_b
 
 const larinha = new Discord.RichEmbed()
 .setAuthor(client.user.username, client.user.avatarURL)
-.setDescription('**Olá, eu sou a ' + client.user.username + ', um bot de anúncios DM, divulgação, moderação, nsfw, etc...**')
+.setDescription('**Olá, eu sou a ' + client.user.username + ', um bot de anúncios DM, divulgação, moderação, nsfw, etc...**<a:rosa_brilho:725865943607017502>')
 .setThumbnail(client.user.avatarURL)
-.addField('<:7774:593646210187919380> Me adicione em seu servidor:', `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=2146958847&scope=bot)**`)
-.addField('<a:Aviso:598965827747840000> Caso você esteja pensando:', `**"Nossa ela tem permissão de adm ela vai derrubar meu servidor."**\n` +
+.addField('<a:Brilhobot:725785106350080031> Me adicione em seu servidor:', `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=2146958847&scope=bot)**`)
+.addField('<a:Sirenebot:725785531622884002> Caso você esteja pensando:', `**"Nossa ela tem permissão de adm ela vai derrubar meu servidor."**\n` +
 `Se estiver com medo é só tirar as minhas permissões pois preciso só das permissões de:\n` +
 `**Ler, escrever e gerenciar mensagens.**`)
-.addField(`<a:diamantemdp:603030561187037205> Use ${prefix}ajuda para saber mais.`, `**[Entre em meu servidor https://discord.gg/2vNYy5t](https://discord.gg/2vNYy5t)**`)
+.addField(`<a:Dimabot:725784682159013899> Use ${prefix}ajuda para saber mais.`, `**[Entre em meu servidor](https://discord.gg/PUnXq9e)**`)
 .setColor('#ff47ec')
 .setFooter(message.member.username, message.member.avatarURL)
 .setTimestamp();

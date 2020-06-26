@@ -1,6 +1,6 @@
 module.exports.run = async (client, message, args) => {
     if(!message.member.hasPermission("BAN_MEMBERS", false, true, true)) {
-        message.reply(":no_entry_sign: Desculpe, você não tem permissão de desbanir usuários neste servidor!");
+        message.reply("<a:Sirenebot:725785531622884002> Desculpe, você não tem permissão de desbanir usuários neste servidor!");
         return 0;
     }
     if (!message.guild.me.hasPermission("BAN_MEMBERS", false, true)) {
