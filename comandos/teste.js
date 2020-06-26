@@ -15,16 +15,16 @@ message.delete();
             .setDescription(`${servers.map(se=> `Nome: \`${se.name}\` - ID: \`${se.id}\` - Usuários: \`${se.memberCount}\``).slice(0,10).join('\n')}`)
             .setFooter(`Página ${pagina} de ${totalPages}`, message.author.displayAvatarURL)
             .setAuthor('Servidores em que Estou', client.user.displayAvatarURL)
-            .setColor('#010000')
+            .setColor('RANDOM')
             .setThumbnail(client.user.displayAvatarURL)
   message.channel.send(embed).then(async ser => {
 
                 if(servers.size > 10)
-                 embed.c.react("725791477099266120");
-                 embed.react("725791515628011621");
+                 await embed.msg.react.reaction("725791477099266120");
+                 await embed.msg.react.reaction("725791515628011621");
                     
-                    const voltar = ser.createReactionCollector((r, u) => r.emoji.name === "⬅" && u.id === message.author.id, { time: 100000 });
-                    const proximo = ser.createReactionCollector((r, u) => r.emoji.name === "➡" && u.id === message.author.id, { time: 100000 });
+                    const voltar = ser.createReactionCollector((r, u) => r.emoji.name === "725791477099266120" && u.id === message.author.id, { time: 100000 });
+                    const proximo = ser.createReactionCollector((r, u) => r.emoji.name === "725791515628011621" && u.id === message.author.id, { time: 100000 });
                 
                                 voltar.on("collect", async r => {
                                     if(pagina !== 1) {
