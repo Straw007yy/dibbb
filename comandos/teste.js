@@ -20,8 +20,9 @@ message.delete();
   message.channel.send(embed).then(async ser => {
 
                 if(servers.size > 10)
-                 await embed.msg.react.reaction("725791477099266120");
-                 await embed.msg.react.reaction("725791515628011621");
+                 await
+                  message.react('725791477099266120')
+                  message.react('725791515628011621')
                     
                     const voltar = ser.createReactionCollector((r, u) => r.emoji.name === "725791477099266120" && u.id === message.author.id, { time: 100000 });
                     const proximo = ser.createReactionCollector((r, u) => r.emoji.name === "725791515628011621" && u.id === message.author.id, { time: 100000 });
