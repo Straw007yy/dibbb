@@ -183,25 +183,25 @@ client.on("ready", () => {
     {
       name: ` Em ${client.users.size} Usuário, Em ${client.guilds.size} Servidores.`,
       type: "STREAMING",
-      url: "https://discord.gg/projetox"
+      url: "https://discord.gg/bailedefavela"
     },
     {
       name: `Suas sugestões`,
       type: "LISTENING",
-      url: "https://discord.gg/projetox"
+      url: "https://discord.gg/bdf"
     },
     {
       name: `Seu servidor no topo`,
       type: "PLAYING",
-      url: "https://discord.gg/projetox"
+      url: "https://discord.gg/bdf"
     },
     {
-      name: `Jaum No topo`,
+      name: `Daddy No topo`,
       type: "PLAYING",
-      url: "https://discord.gg/projetox"
+      url: "https://discord.gg/bdf"
     },
     {
-      name: `Gui Owna No Topo`,
+      name: `Daddy Owna No Topo`,
       type: "PLAYING",
       url: "https://discord.gg/projetox"
     },
@@ -211,7 +211,7 @@ client.on("ready", () => {
       url: "https://discord.gg/projetox"
     },
     {
-      name: `Discord.gg/projetox`,
+      name: `Discord.gg/bdf`,
       type: "STREAMING",
       url: "https://discord.gg/projetox"
     },
