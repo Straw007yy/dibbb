@@ -160,8 +160,8 @@ client.on("guildCreate", async guild => {
 });*/
 
 client.on("ready", () => {
-  let logs = client.channels.get("730549809458446426");
-  if (!logs) return console.log("730549809458446426");
+  let logs = client.channels.get("726153778323128421");
+  if (!logs) return console.log("726153778323128421");
   logs.send(
     `O bot \`${client.user.username}\` foi iniciado, com ${client.users.size} usuários, em ${client.guilds.size} servidores.`
   );
@@ -175,7 +175,7 @@ client.on("ready", () => {
     game: {
       name: config.Status,
       type: "WATCHING, LISTENING, PLAYING, STREAMING",
-      url: "https://discord.gg/bdf"
+      url: "https://discord.gg/projetox"
     }
   });
 
@@ -183,25 +183,25 @@ client.on("ready", () => {
     {
       name: ` Em ${client.users.size} Usuário, Em ${client.guilds.size} Servidores.`,
       type: "STREAMING",
-      url: "https://discord.gg/bailedefavela"
+      url: "https://discord.gg/projetox"
     },
     {
       name: `Suas sugestões`,
       type: "LISTENING",
-      url: "https://discord.gg/bdf"
+      url: "https://discord.gg/projetox"
     },
     {
       name: `Seu servidor no topo`,
       type: "PLAYING",
-      url: "https://discord.gg/bdf"
+      url: "https://discord.gg/projetox"
     },
     {
-      name: `Daddy No topo`,
+      name: `Jaum No topo`,
       type: "PLAYING",
-      url: "https://discord.gg/bdf"
+      url: "https://discord.gg/projetox"
     },
     {
-      name: `Daddy Owna No Topo`,
+      name: `Gui Owna No Topo`,
       type: "PLAYING",
       url: "https://discord.gg/projetox"
     },
@@ -211,7 +211,7 @@ client.on("ready", () => {
       url: "https://discord.gg/projetox"
     },
     {
-      name: `Discord.gg/bdf`,
+      name: `Discord.gg/projetox`,
       type: "STREAMING",
       url: "https://discord.gg/projetox"
     },
