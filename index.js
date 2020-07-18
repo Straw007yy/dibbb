@@ -191,7 +191,7 @@ client.on("ready", () => {
       url: "https://discord.gg/projetox"
     },
     {
-      name: `Seu servidor no topo`,
+      name: `Me Adicone Em Seu Servidor ❤`,
       type: "PLAYING",
       url: "https://discord.gg/projetox"
     },
@@ -201,7 +201,7 @@ client.on("ready", () => {
       url: "https://discord.gg/projetox"
     },
     {
-      name: `Gui Owna No Topo`,
+      name: `DaddyNo Topo`,
       type: "PLAYING",
       url: "https://discord.gg/projetox"
     },
