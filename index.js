@@ -175,7 +175,7 @@ client.on("ready", () => {
     game: {
       name: config.Status,
       type: "WATCHING, LISTENING, PLAYING, STREAMING",
-      url: "https://discord.gg/projetox"
+      url: "https://discord.gg/bdf"
     }
   });
 
