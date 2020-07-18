@@ -31,15 +31,15 @@ exports.run = async (client, message, args) => {
     .setColor("#010000")
     .setThumbnail(client.user.displayAvatarURL);
   message.channel.send(embed).then(async ser => {
-    if (servers.size > 10) await message.react("725791477099266120");
-    await message.react("725791515628011621");
+    if (servers.size > 10) await message.react("733915507459358793");
+    await message.react("733915449498009610");
 
     const voltar = ser.createReactionCollector(
-      (r, u) => r.emoji.name === "⬅" && u.id === message.author.id,
+      (r, u) => r.emoji.name === "733915507459358793" && u.id === message.author.id,
       { time: 100000 }
     );
     const proximo = ser.createReactionCollector(
-      (r, u) => r.emoji.name === "➡" && u.id === message.author.id,
+      (r, u) => r.emoji.name === "733915449498009610" && u.id === message.author.id,
       { time: 100000 }
     );
 

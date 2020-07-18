@@ -160,8 +160,8 @@ client.on("guildCreate", async guild => {
 });*/
 
 client.on("ready", () => {
-  let logs = client.channels.get("726153778323128421");
-  if (!logs) return console.log("726153778323128421");
+  let logs = client.channels.get("730549809458446426");
+  if (!logs) return console.log("730549809458446426");
   logs.send(
     `O bot \`${client.user.username}\` foi iniciado, com ${client.users.size} usuários, em ${client.guilds.size} servidores.`
   );
