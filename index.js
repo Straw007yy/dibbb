@@ -48,29 +48,6 @@ client.on("message", message => {
       "**Esse comando não existe ou foi ultilizado de maneira incorreta! **<a:Sirenebot:725785531622884002>"
     );
   }
-
-  let convite = /(discord.gg|discordapp.com\/invite\/)\/(invite)?/gi.test(
-    message.content
-  );
-  if (convite === true) {
-    if (!message.member.hasPermission("ADMINISTRATOR")) return;
-
-    message.delete(1000);
-    message.reply(
-      "**<a:Sirenebot:725785531622884002> Você não pode enviar convites aki nesse servidor, o dono foi avisado!**"
-    );
-
-    let embed = new Discord.RichEmbed()
-      .setAuthor("Anti Invite!")
-      .setDescription(
-        "**<a:Sirenebot:725785531622884002> Foi dectado que 1 usuario acaba de mandar 1 convite em seu servidor!**"
-      )
-      .addField("Nick:", message.author.tag)
-      .addField("ID:", message.author.id)
-      .addField("Canal:", message.channel)
-      .setColor("RED");
-    message.guild.owner.send(embed);
-  }
 });
 
 client.on("message", message => {
