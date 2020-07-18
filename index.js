@@ -211,7 +211,7 @@ client.on("ready", () => {
       url: "https://discord.gg/projetox"
     },
     {
-      name: `Discord.gg/projetox`,
+      name: `Daddy Negociamos!!`,
       type: "STREAMING",
       url: "https://discord.gg/projetox"
     },
