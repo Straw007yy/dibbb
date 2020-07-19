@@ -3,7 +3,7 @@ const config = require("../config.json")
 var prefix = config.prefix
 
 module.exports.run = async (client, message, args) => {
-if (message.author.id !== '408700292209704970') return message.reply(":7775: | você não possui permissão para usar esse comando.");
+if (message.author.id !== '549373164464111618') return message.reply(":7775: | você não possui permissão para usar esse comando.");
 message.delete()
  
 let on = client.users.filter(m => m.presence.status === 'online')
