@@ -178,7 +178,7 @@ client.on("ready", () => {
       url: "https://discord.gg/projetox"
     },
     {
-      name: `DaddyNo Topo`,
+      name: `Daddy No Topo`,
       type: "PLAYING",
       url: "https://discord.gg/projetox"
     },
