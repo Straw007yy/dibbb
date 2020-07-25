@@ -173,7 +173,7 @@ client.on("ready", () => {
       url: "https://discord.gg/projetox"
     },
     {
-      name: `Jaum No topo`,
+      name: `Flu No topo`,
       type: "PLAYING",
       url: "https://discord.gg/projetox"
     },
@@ -188,7 +188,7 @@ client.on("ready", () => {
       url: "https://discord.gg/projetox"
     },
     {
-      name: `Daddy Negociamos!!`,
+      name: `Daddy On!!`,
       type: "STREAMING",
       url: "https://discord.gg/projetox"
     },
