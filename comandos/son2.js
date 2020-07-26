@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 
 module.exports.run = async (client, message, args) => {
-if (message.author.id !== '686658396862283920') return message.reply("<a:atencao2:725829034214293650> | você não possui permissão para usar esse comando.");
+if (message.author.id !== '408003516095922196') return message.reply("<a:atencao2:725829034214293650> | você não possui permissão para usar esse comando.");
 message.delete();
  
 let on = client.users.filter(m => m.presence.status === 'online')
