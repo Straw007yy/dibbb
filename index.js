@@ -173,7 +173,7 @@ client.on("ready", () => {
       url: "https://discord.gg/projetox"
     },
     {
-      name: `Flu No topo`,
+      name: `мℓ angel 🍀 No topo`,
       type: "PLAYING",
       url: "https://discord.gg/projetox"
     },
