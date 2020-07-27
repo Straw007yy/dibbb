@@ -173,12 +173,12 @@ client.on("ready", () => {
       url: "https://discord.gg/projetox"
     },
     {
-      name: `мℓ angel 🍀 No topo`,
+      name: `🏰 INFINITE No topo`,
       type: "PLAYING",
       url: "https://discord.gg/projetox"
     },
     {
-      name: `Daddy No Topo`,
+      name: `Larissa na Cama`,
       type: "PLAYING",
       url: "https://discord.gg/projetox"
     },
