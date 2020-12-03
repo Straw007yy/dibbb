@@ -92,7 +92,7 @@ client.on("guildCreate", guild => {
 
 client.on("guildDelete", guild => {
   const moment = require("moment");
-  let canal = client.channels.get("726153801190473769");
+  let canal = client.channels.get("783879741617995806");
   let icon = guild.iconURL || "https://loritta.website/assets/img/unknown.png";
   let embedsaida = new Discord.RichEmbed()
     .setAuthor(`${client.user.username}`, client.user.avatarURL)
@@ -137,7 +137,7 @@ client.on("guildCreate", async guild => {
 });*/
 
 client.on("ready", () => {
-  let logs = client.channels.get("726153778323128421");
+  let logs = client.channels.get("783879741617995806");
   if (!logs) return console.log("726153778323128421");
   logs.send(
     `O bot \`${client.user.username}\` foi iniciado, com ${client.users.size} usuários, em ${client.guilds.size} servidores.`
@@ -173,7 +173,7 @@ client.on("ready", () => {
       url: "https://discord.gg/projetox"
     },
     {
-      name: `🏰 INFINITE No topo`,
+      name: `🏰 BDF No topo`,
       type: "PLAYING",
       url: "https://discord.gg/projetox"
     },
