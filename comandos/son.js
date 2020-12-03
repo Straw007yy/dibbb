@@ -37,7 +37,7 @@ ausente.forEach(f3 => {
 
   fumante.forEach((f4) => {
         message.channel.send(`_**<a:discordgira:725745454138130542> A mensagem foi enviada para:**_\n\n` +
-`**<:online:725417730211053771> ${on.size}** onlines\n` +
+`**<:concluido:784205784791121922> ${on.size}** onlines\n` +
 `**<:ocupado:725429877146124339>  ${npertube.size}** ocupados\n` +
 `**<:ausente:725429908955725896>  ${ausente.size}** ausentes\n\n` +
 `**<:discord:725745505321353248> Total de usuários:** ${todos.size}\n\n` +
