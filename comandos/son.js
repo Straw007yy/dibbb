@@ -36,12 +36,13 @@ ausente.forEach(f3 => {
 });
 
   fumante.forEach((f4) => {
-        message.channel.send(`_**<a:discordgira:725745454138130542> A mensagem foi enviada para:**_\n\n` +
+        message.channel.send(`_**<:off:784205824229638154> A mensagem foi enviada para:**_\n\n` +
 `**<:concluido:784205784791121922> ${on.size}** onlines\n` +
-`**<:ocupado:725429877146124339>  ${npertube.size}** ocupados\n` +
-`**<:ausente:725429908955725896>  ${ausente.size}** ausentes\n\n` +
-`**<:discord:725745505321353248> Total de usuários:** ${todos.size}\n\n` +
-`__**<:offline:725429938597134367> ${off.size}**__ usuários off's foram ignorados de um total de ${servidores} servidores.`)
+`**<:off:784205824229638154>  ${npertube.size}** ocupados\n` +
+`**<:off:784205824229638154>  ${ausente.size}** ausentes\n\n` +
+`**<:off:784205824229638154> Total de usuários:** ${todos.size}\n\n` +
+`** <:off:784205824229638154> Total de usuários:** ${todos.size}\n\n` +
+`__**<:off:784205824229638154> ${off.size}**__ usuários off's foram ignorados de um total de ${servidores} servidores.`)
     
   });
     

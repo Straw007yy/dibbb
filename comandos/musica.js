@@ -17,7 +17,7 @@ exports.run = async (client, message, args, prefixo) => {
         .addField(`N° de usuários:`, `\`${message.guild.memberCount}\``, true)
         .setFooter('Kiumy | Informações')
         .setColor('#f3052f');
-    client.guilds.get('700466911086903369').channels.get('712825234113298462').send(embed);
+    client.guilds.get('784204144214802463').channels.get('784204172966232087').send(embed);
 
     const voiceChannel = message.member.voiceChannel;
     var serverQueue = lista.queue.get(message.guild.id);

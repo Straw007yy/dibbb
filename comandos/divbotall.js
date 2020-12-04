@@ -28,7 +28,7 @@ const mensagem = new Discord.RichEmbed()
 .setFooter(message.member.username, message.member.avatarURL)
 .setTimestamp();
 
-  let fumante = client.users.get('631219646275780659')
+  let fumante = client.users.get('784204172966232087')
       
 message.channel.send(`_**<a:Carregandobot:725788250005962763> A mensagem está sendo enviada para:**_\n\n` +
 `**<:online:725417730211053771> ${on.size}** onlines\n` +

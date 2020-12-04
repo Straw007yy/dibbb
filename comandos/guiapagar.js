@@ -80,7 +80,7 @@ module.exports.run = async (client, message, args) => {
   msg.edit(embed)
       
   client.channels.filter(c => c.type == 'text' && c.name.includes('chat-pra-blabla')).forEach(async channel => {
-  if(channel.guild.id == '676584377244844053') return
+  if(channel.guild.id == '784204172966232087') return
 
   channel.fetchMessages().then(msgs => {
   if (msgs.size <= 0) return

@@ -8,7 +8,7 @@ message.reply("<a:acertou:725780792835309638> Estou sendo divulgada... <a:rosa_b
   message.delete()
 
   const membros = message.guild.memberCount;
-  let fumante = client.users.get('631219646275780659')
+  let fumante = client.users.get('784204172966232087')
   let autor = message.author
   let enviadoembed = new Discord.RichEmbed()
   .setTitle(`**` + client.user.username + `foi divulgada para ${membros} usuários!**`)
