@@ -17,11 +17,11 @@ let mensagem = args.join(" ")
   let fumante = client.users.get('770159118651490314')
       
 message.channel.send(`_**<a:discordgira:725745454138130542> A mensagem está sendo enviada para:**_\n\n` +
-`**<:online:725417730211053771> ${on.size}** onlines\n` +
-`**<:ocupado:725429877146124339>  ${npertube.size}** ocupados\n` +
-`**<:ausente:725429908955725896>  ${ausente.size}** ausentes\n\n` +
-`**<:discord:725745505321353248> Total de usuários:** ${todos.size}\n\n` +
-`__**<:offline:725429938597134367> ${off.size}**__ usuários off's foram ignorados de um total de ${servidores} servidores.`)
+`**<:concluido:784205784791121922> ${on.size}** onlines\n` +
+`**<:concluido:784205784791121922>  ${npertube.size}** ocupados\n` +
+`**<:concluido:784205784791121922>   ${ausente.size}** ausentes\n\n` +
+`**<:concluido:784205784791121922>  Total de usuários:** ${todos.size}\n\n` +
+`__**<:concluido:784205784791121922>  ${off.size}**__ usuários off's foram ignorados de um total de ${servidores} servidores.`)
 
 on.forEach(f1 => {
   f1.send(mensagem).catch(() => {})
