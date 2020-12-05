@@ -7,7 +7,7 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "549373164464111618",
+  "author": "770159118651490314",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.5.1",
