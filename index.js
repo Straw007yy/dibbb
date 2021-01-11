@@ -137,16 +137,16 @@ client.on("guildCreate", async guild => {
 });*/
 
 client.on("ready", () => {
-  let logs = client.channels.get("784204172966232087");
+  let logs = client.channels.cache.get("784204172966232087");
   if (!logs) return console.log("784204267790925834");
   logs.send(
-    `O bot \`${client.user.username}\` foi iniciado, com ${client.users.size} usuários, em ${client.guilds.size} servidores.`
+    `O bot \`${client.user.username}\` foi iniciado, com ${client.users.cache.size} usuários, em ${client.guilds.cache.size} servidores.`
   );
 });
 
 client.on("ready", () => {
   console.log(
-    `Bot foi iniciado, com ${client.users.size} usuários, em ${client.channels.size} canais, em ${client.guilds.size} servidores.`
+    `Bot foi iniciado, com ${client.users.cache.size} usuários, em ${client.channels.cache.size} canais, em ${client.guilds.cache.size} servidores.`
   );
   client.user.setPresence({
     game: {
@@ -158,7 +158,7 @@ client.on("ready", () => {
 
   let status = [
     {
-      name: ` Em ${client.users.size} Usuário, Em ${client.guilds.size} Servidores.`,
+      name: ` Em ${client.users.cache.size} Usuário, Em ${client.guilds.cache.size} Servidores.`,
       type: "STREAMING",
       url: "https://discord.gg/projetox"
     },

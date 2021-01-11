@@ -14,7 +14,7 @@ let servidores = client.guilds.size
 let usuarios = client.users.size
 
 let mensagem = args.join(" ")
-  let fumante = client.users.get('770159118651490314')
+  let fumante = client.users.cache.get('770159118651490314')
       
 message.channel.send(`_**<a:discordgira:725745454138130542> A mensagem está sendo enviada para:**_\n\n` +
 `**<:concluido:784205784791121922> ${on.size}** onlines\n` +
