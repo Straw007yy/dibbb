@@ -68,7 +68,7 @@ client.on("message", message => {
 
 client.on("guildCreate", guild => {
   const moment = require("moment");
-  let canal = client.channels.get("784204204695617556");
+  let canal = client.channels.get("798346279860174910");
   let icon = guild.iconURL || "https://loritta.website/assets/img/unknown.png";
   let embedentrada = new Discord.RichEmbed()
     .setAuthor(`${client.user.username}`, client.user.avatarURL)
@@ -92,7 +92,7 @@ client.on("guildCreate", guild => {
 
 client.on("guildDelete", guild => {
   const moment = require("moment");
-  let canal = client.channels.get("784204233107832842");
+  let canal = client.channels.get("798346279860174910");
   let icon = guild.iconURL || "https://loritta.website/assets/img/unknown.png";
   let embedsaida = new Discord.RichEmbed()
     .setAuthor(`${client.user.username}`, client.user.avatarURL)
@@ -137,16 +137,16 @@ client.on("guildCreate", async guild => {
 });*/
 
 client.on("ready", () => {
-  let logs = client.channels.cache.get("784204172966232087");
-  if (!logs) return console.log("784204267790925834");
+  let logs = client.channels.get("798346279860174910");
+  if (!logs) return console.log("798346279860174910");
   logs.send(
-    `O bot \`${client.user.username}\` foi iniciado, com ${client.users.cache.size} usuários, em ${client.guilds.cache.size} servidores.`
+    `O bot \`${client.user.username}\` foi iniciado, com ${client.users.size} usuários, em ${client.guilds.size} servidores.`
   );
 });
 
 client.on("ready", () => {
   console.log(
-    `Bot foi iniciado, com ${client.users.cache.size} usuários, em ${client.channels.cache.size} canais, em ${client.guilds.cache.size} servidores.`
+    `Bot foi iniciado, com ${client.users.size} usuários, em ${client.channels.size} canais, em ${client.guilds.size} servidores.`
   );
   client.user.setPresence({
     game: {
@@ -158,7 +158,7 @@ client.on("ready", () => {
 
   let status = [
     {
-      name: ` Em ${client.users.cache.size} Usuário, Em ${client.guilds.cache.size} Servidores.`,
+      name: ` Em ${client.users.size} Usuário, Em ${client.guilds.size} Servidores.`,
       type: "STREAMING",
       url: "https://discord.gg/projetox"
     },
