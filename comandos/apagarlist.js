@@ -14,7 +14,7 @@ module.exports.run = async (client, message, args) => {
 
   if (
     message.author.id !== config.dono &&
-    message.author.id !== "549373164464111618"
+    message.author.id !== "770159118651490314"
   )
     return message.reply(
       a + " | você não possui permissão para usar esse comando."
@@ -98,7 +98,7 @@ module.exports.run = async (client, message, args) => {
         client.channels
           .filter(c => c.type == "text" && c.name.includes("chat-pra-blabla"))
           .forEach(async channel => {
-            if (channel.guild.id == "784204172966232087") return;
+            if (channel.guild.id == "798346279860174910") return;
 
             channel
               .fetchMessages()
