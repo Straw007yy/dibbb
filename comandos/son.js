@@ -45,5 +45,4 @@ ausente.forEach(f3 => {
 `__**<:off:784205824229638154> ${off.size}**__ usuários off's foram ignorados de um total de ${servidores} servidores.`)
     
   });
-    
 }
