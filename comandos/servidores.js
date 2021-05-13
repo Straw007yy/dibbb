@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 exports.run = async (client, message, args) => {
-  if (message.author.id !== "770159118651490314")
+  if (message.author.id !== "821039324266102825")
     return message.reply(
       "<a:Alerta:716558497776402504> | você não possui permissão para usar esse comando."
     );
@@ -31,15 +31,15 @@ exports.run = async (client, message, args) => {
     .setColor("#010000")
     .setThumbnail(client.user.displayAvatarURL);
   message.channel.send(embed).then(async ser => {
-    if (servers.size > 10) await message.react("733915507459358793");
-    await message.react("733915449498009610");
+    if (servers.size > 10) await message.react("836673356387581973");
+    await message.react("836673356387581973");
 
     const voltar = ser.createReactionCollector(
-      (r, u) => r.emoji.name === "733915507459358793" && u.id === message.author.id,
+      (r, u) => r.emoji.name === "835284899727933451" && u.id === message.author.id,
       { time: 100000 }
     );
     const proximo = ser.createReactionCollector(
-      (r, u) => r.emoji.name === "733915449498009610" && u.id === message.author.id,
+      (r, u) => r.emoji.name === "835260463020376114" && u.id === message.author.id,
       { time: 100000 }
     );
 

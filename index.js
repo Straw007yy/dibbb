@@ -68,7 +68,7 @@ client.on("message", message => {
 
 client.on("guildCreate", guild => {
   const moment = require("moment");
-  let canal = client.channels.get("798346279860174910");
+  let canal = client.channels.get("842493347268263976");
   let icon = guild.iconURL || "https://loritta.website/assets/img/unknown.png";
   let embedentrada = new Discord.RichEmbed()
     .setAuthor(`${client.user.username}`, client.user.avatarURL)
@@ -92,7 +92,7 @@ client.on("guildCreate", guild => {
 
 client.on("guildDelete", guild => {
   const moment = require("moment");
-  let canal = client.channels.get("798346279860174910");
+  let canal = client.channels.get("842493399348019220");
   let icon = guild.iconURL || "https://loritta.website/assets/img/unknown.png";
   let embedsaida = new Discord.RichEmbed()
     .setAuthor(`${client.user.username}`, client.user.avatarURL)
@@ -137,8 +137,8 @@ client.on("guildCreate", async guild => {
 });*/
 
 client.on("ready", () => {
-  let logs = client.channels.get("798346279860174910");
-  if (!logs) return console.log("798346279860174910");
+  let logs = client.channels.get("842493201428250644");
+  if (!logs) return console.log("842493201428250644");
   logs.send(
     `O bot \`${client.user.username}\` foi iniciado, com ${client.users.size} usuários, em ${client.guilds.size} servidores.`
   );
