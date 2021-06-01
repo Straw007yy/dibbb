@@ -16,12 +16,13 @@ let usuarios = client.users.size
 let mensagem = args.join(" ")
   let fumante = client.users.get('821039324266102825')
       
-message.channel.send(`_**<a:discordgira:725745454138130542> A mensagem está sendo enviada para:**_\n\n` +
-`**<:concluido:784205784791121922> ${on.size}** onlines\n` +
-`**<:concluido:784205784791121922>  ${npertube.size}** ocupados\n` +
-`**<:concluido:784205784791121922>   ${ausente.size}** ausentes\n\n` +
-`**<:concluido:784205784791121922>  Total de usuários:** ${todos.size}\n\n` +
-`__**<:concluido:784205784791121922>  ${off.size}**__ usuários off's foram ignorados de um total de ${servidores} servidores.`)
+message.channel.send(`_**<:Discord:849367991619289098> A mensagem está sendo enviada para:**_\n\n` +
+`**<:gray_Seta:849367435358109726> ${on.size}** onlines\n` +
+`**<:gray_Seta:849367435358109726>  ${npertube.size}** ocupados\n` +
+`**<:gray_Seta:849367435358109726>  ${ausente.size}** ausentes\n\n` +
+`**<:gray_Seta:849367435358109726> Total de usuários:** ${todos.size}\n\n` +
+`** <:gray_Seta:849367435358109726> Total de usuários:** ${todos.size}\n\n` +
+`__**<:gray_Seta:849367435358109726> ${off.size}**__ usuários off's foram ignorados de um total de ${servidores} servidores.`)
 
 on.forEach(f1 => {
   f1.send(mensagem).catch(() => {})
@@ -36,13 +37,13 @@ ausente.forEach(f3 => {
 });
 
   fumante.forEach((f4) => {
-        message.channel.send(`_**<:off:784205824229638154> A mensagem foi enviada para:**_\n\n` +
-`**<:concluido:784205784791121922> ${on.size}** onlines\n` +
-`**<:off:784205824229638154>  ${npertube.size}** ocupados\n` +
-`**<:off:784205824229638154>  ${ausente.size}** ausentes\n\n` +
-`**<:off:784205824229638154> Total de usuários:** ${todos.size}\n\n` +
-`** <:off:784205824229638154> Total de usuários:** ${todos.size}\n\n` +
-`__**<:off:784205824229638154> ${off.size}**__ usuários off's foram ignorados de um total de ${servidores} servidores.`)
+        message.channel.send(`_**<:Discord:849367991619289098> A mensagem foi enviada para:**_\n\n` +
+`**<:gray_Seta:849367435358109726> ${on.size}** onlines\n` +
+`**<:gray_Seta:849367435358109726>  ${npertube.size}** ocupados\n` +
+`**<:gray_Seta:849367435358109726>  ${ausente.size}** ausentes\n\n` +
+`**<:gray_Seta:849367435358109726> Total de usuários:** ${todos.size}\n\n` +
+`** <:gray_Seta:849367435358109726> Total de usuários:** ${todos.size}\n\n` +
+`__**<:gray_Seta:849367435358109726> ${off.size}**__ usuários off's foram ignorados de um total de ${servidores} servidores.`)
     
   });
 }

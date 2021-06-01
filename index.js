@@ -45,7 +45,7 @@ client.on("message", message => {
   } catch (e) {
     console.error(e.stack);
     message.reply(
-      "**Esse comando não existe ou foi ultilizado de maneira incorreta! **<a:Sirenebot:725785531622884002>"
+      "**Esse comando não existe ou foi ultilizado de maneira incorreta! **<a:red_hater_bdf:849367049783214182>"
     );
   }
 });
@@ -68,7 +68,7 @@ client.on("message", message => {
 
 client.on("guildCreate", guild => {
   const moment = require("moment");
-  let canal = client.channels.get("842493347268263976");
+  let canal = client.channels.get("849365440622886912");
   let icon = guild.iconURL || "https://loritta.website/assets/img/unknown.png";
   let embedentrada = new Discord.RichEmbed()
     .setAuthor(`${client.user.username}`, client.user.avatarURL)
@@ -92,7 +92,7 @@ client.on("guildCreate", guild => {
 
 client.on("guildDelete", guild => {
   const moment = require("moment");
-  let canal = client.channels.get("842493399348019220");
+  let canal = client.channels.get("849365546063757382");
   let icon = guild.iconURL || "https://loritta.website/assets/img/unknown.png";
   let embedsaida = new Discord.RichEmbed()
     .setAuthor(`${client.user.username}`, client.user.avatarURL)
@@ -137,10 +137,10 @@ client.on("guildCreate", async guild => {
 });*/
 
 client.on("ready", () => {
-  let logs = client.channels.get("842493201428250644");
-  if (!logs) return console.log("842493201428250644");
+  let logs = client.channels.get("849365627998568478");
+  if (!logs) return console.log("849365627998568478");
   logs.send(
-    `O bot \`${client.user.username}\` foi iniciado, com ${client.users.size} usuários, em ${client.guilds.size} servidores.`
+    `A \`${client.user.username}\` foi iniciado, com ${client.users.size} usuários, em ${client.guilds.size} servidores.`
   );
 });
 
@@ -228,7 +228,7 @@ client.on("guildCreate", guild => {
     )
     .addField(
       ` Use ${prefix}ajuda para saber mais.`,
-      `**[Entre em meu servidor](https://discord.gg/PUnXq9e)**`
+      `**[Entre em meu servidor](https://discord.gg/bdf)**`
     )
     .setColor("#ff47ec")
     .setFooter(client.user.username, client.user.avatarURL)
