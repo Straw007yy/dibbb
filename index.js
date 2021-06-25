@@ -152,7 +152,7 @@ client.on("ready", () => {
     game: {
       name: config.Status,
       type: "WATCHING, LISTENING, PLAYING, STREAMING",
-      url: "https://discord.gg/projetox"
+      url: "https://discord.gg/coronel"
     }
   });
 
@@ -160,42 +160,42 @@ client.on("ready", () => {
     {
       name: ` Em ${client.users.size} Usuário, Em ${client.guilds.size} Servidores.`,
       type: "STREAMING",
-      url: "https://discord.gg/projetox"
+      url: "https://discord.gg/coronel"
     },
     {
       name: `Suas sugestões`,
       type: "LISTENING",
-      url: "https://discord.gg/projetox"
+      url: "https://discord.gg/coronel"
     },
     {
       name: `Me Adicone Em Seu Servidor ❤`,
       type: "PLAYING",
-      url: "https://discord.gg/projetox"
+      url: "https://discord.gg/coronel"
     },
     {
-      name: `🏰 BDF No topo`,
+      name: `🏰 coronel No topo`,
       type: "PLAYING",
-      url: "https://discord.gg/projetox"
+      url: "https://discord.gg/coronel"
     },
     {
-      name: `Larissa na Cama`,
+      name: `lizee na Cama`,
       type: "PLAYING",
-      url: "https://discord.gg/projetox"
+      url: "https://discord.gg/coronel"
     },
     {
       name: `Meu prefixo é: ${prefix}`,
       type: "STREAMING",
-      url: "https://discord.gg/projetox"
+      url: "https://discord.gg/coronel"
     },
     {
-      name: `Daddy On!!`,
+      name: `LIL FOFO On!!`,
       type: "STREAMING",
-      url: "https://discord.gg/projetox"
+      url: "https://discord.gg/coronel"
     },
     {
-      name: `Amor para você`,
+      name: `O pau do lil para você`,
       type: "STREAMING",
-      url: "https://discord.gg/projetox"
+      url: "https://discord.gg/coronel"
     }
   ];
 
