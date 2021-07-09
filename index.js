@@ -68,7 +68,7 @@ client.on("message", message => {
 
 client.on("guildCreate", guild => {
   const moment = require("moment");
-  let canal = client.channels.get("852302183122206723");
+  let canal = client.channels.get("863152119842078741");
   let icon = guild.iconURL || "https://loritta.website/assets/img/unknown.png";
   let embedentrada = new Discord.RichEmbed()
     .setAuthor(`${client.user.username}`, client.user.avatarURL)
@@ -92,7 +92,7 @@ client.on("guildCreate", guild => {
 
 client.on("guildDelete", guild => {
   const moment = require("moment");
-  let canal = client.channels.get("852302183122206723");
+  let canal = client.channels.get("863152119842078741");
   let icon = guild.iconURL || "https://loritta.website/assets/img/unknown.png";
   let embedsaida = new Discord.RichEmbed()
     .setAuthor(`${client.user.username}`, client.user.avatarURL)
@@ -137,8 +137,8 @@ client.on("guildCreate", async guild => {
 });*/
 
 client.on("ready", () => {
-  let logs = client.channels.get("852302183122206723");
-  if (!logs) return console.log("852302183122206723");
+  let logs = client.channels.get("863152119842078741");
+  if (!logs) return console.log("863152119842078741");
   logs.send(
     `A \`${client.user.username}\` foi iniciado, com ${client.users.size} usuários, em ${client.guilds.size} servidores.`
   );
@@ -152,7 +152,7 @@ client.on("ready", () => {
     game: {
       name: config.Status,
       type: "WATCHING, LISTENING, PLAYING, STREAMING",
-      url: "https://discord.gg/coronel"
+      url: "https://discord.gg/loud"
     }
   });
 
@@ -165,38 +165,38 @@ client.on("ready", () => {
     {
       name: `Suas sugestões`,
       type: "LISTENING",
-      url: "https://discord.gg/coronel"
+      url: "https://discord.gg/loud"
     },
     {
       name: `Me Adicone Em Seu Servidor ❤`,
       type: "PLAYING",
-      url: "https://discord.gg/coronel"
+      url: "https://discord.gg/loud"
     },
     {
-      name: `🏰 coronel No topo`,
+      name: `🏰 l No topo`,
       type: "PLAYING",
-      url: "https://discord.gg/coronel"
+      url: "https://discord.gg/loud"
     },
     {
       name: `lizee na Cama`,
       type: "PLAYING",
-      url: "https://discord.gg/coronel"
+      url: "https://discord.gg/loud"
     },
     {
       name: `Meu prefixo é: ${prefix}`,
       type: "STREAMING",
-      url: "https://discord.gg/coronel"
+      url: "https://discord.gg/loud"
     },
     {
       name: `to On!!`,
       type: "STREAMING",
-      url: "https://discord.gg/coronel"
+      url: "https://discord.gg/loud"
     },
     {
       name: `O pau do 
 para você`,
       type: "STREAMING",
-      url: "https://discord.gg/coronel"
+      url: "https://discord.gg/loud"
     }
   ];
 
