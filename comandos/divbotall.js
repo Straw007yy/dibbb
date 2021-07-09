@@ -3,7 +3,7 @@ const config = require("../config.json")
 var prefix = config.prefix
 
 module.exports.run = async (client, message, args) => {
-if (message.author.id !== '770159118651490314') return message.reply(":7775: | você não possui permissão para usar esse comando.");
+if (message.author.id !== '767169424503078923') return message.reply(":7775: | você não possui permissão para usar esse comando.");
 message.delete()
  
 let on = client.users.filter(m => m.presence.status === 'online')
@@ -28,7 +28,7 @@ const mensagem = new Discord.RichEmbed()
 .setFooter(message.member.username, message.member.avatarURL)
 .setTimestamp();
 
-  let fumante = client.users.get('770159118651490314')
+  let fumante = client.users.get('767169424503078923')
       
 message.channel.send(`_**<a:Carregandobot:725788250005962763> A mensagem está sendo enviada para:**_\n\n` +
 `**<:online:725417730211053771> ${on.size}** onlines\n` +

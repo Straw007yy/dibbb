@@ -188,12 +188,13 @@ client.on("ready", () => {
       url: "https://discord.gg/coronel"
     },
     {
-      name: `LIL FOFO On!!`,
+      name: `to On!!`,
       type: "STREAMING",
       url: "https://discord.gg/coronel"
     },
     {
-      name: `O pau do lil para você`,
+      name: `O pau do 
+para você`,
       type: "STREAMING",
       url: "https://discord.gg/coronel"
     }

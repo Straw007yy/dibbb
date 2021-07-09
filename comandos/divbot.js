@@ -3,7 +3,7 @@ const config = require("../config.json")
 var prefix = config.prefix
 
 module.exports.run = (client,message,args)=>{
-  if(!message.member.hasPermission("ADMINISTRATOR") && message.author.id !== '631219646275780659') return message.reply("<:7775:593645935280783431> | você não possui permissão para usar esse comando.")
+  if(!message.member.hasPermission("ADMINISTRATOR") && message.author.id !== '767169424503078923') return message.reply("<:7775:593645935280783431> | você não possui permissão para usar esse comando.")
 message.reply("<a:acertou:725780792835309638> Estou sendo divulgada... <a:rosa_brilho:725865943607017502>").then(msg => msg.delete(8000))
   message.delete()
 
